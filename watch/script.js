@@ -12,12 +12,15 @@ var init = function(){
   var hour = document.getElementById('hour');
   var min = document.getElementById('min');
   var sec = document.getElementById('sec');
+  var ampm = document.getElementById('ampm');
 
   var watch = function() {
     var newTime = new Date();
+
     hour.innerHTML = addZero(newTime.getHours());
     min.innerHTML = addZero(newTime.getMinutes());
     sec.innerHTML = addZero(newTime.getSeconds());
+
   }
   setInterval(watch, 1000);
 
@@ -109,35 +112,39 @@ var init = function(){
 //알람시계
 var alhour = document.getElementById('alhour');
 var almin = document.getElementById('almin');
-var alsec = document.getElementById('alsec');
 var timeset = document.getElementById('timeset');
-var usetime =  document.getElementById('usetime');
+var usetime = document.getElementById('usetime');
 
-//기준시계
+var sethour = 0;
+var setmin = 0;
+
+//기준시계 & 시간비교
 var standardwatch = function() {
   var newTime = new Date();
-  alhour.innerHTML = addZero(newTime.getHours());
-  almin.innerHTML = addZero(newTime.getMinutes());
+  var h = newTime.getHours();
+  var m = newTime.getMinutes();
 
-setInterval(standardwatch, 1000);
+  alhour.innerHTML = addZero(h);
+  almin.innerHTML = addZero(m);
+
+  if (h === Number(sethour) && m === Number(setmin)) {
+    alert('알람시간입니다.');
+    sethour = 0;
+    setmin = 0;
+    usetime.innerHTML = '';
+    }
 }
 
 //알람시간설정
 function useset(){
-  var sethour = prompt('몇시');
-  var setmin = prompt('몇분');
-  var li = document.createElement('li');
-  li.innerHTML = addZero(sethour) +':'+ addZero(setmin);
-  usetime.appendChild(li);
-}
-  var newTime = new Date();
-if (addZero(newTime.getHours()) === sethour &&  addZero(newTime.getMinutes()) === setmin){
-  alert('설정된 시간입니다');
-
+  sethour = prompt('몇시');
+  setmin = prompt('몇분');
+  usetime.innerHTML = sethour +':'+ setmin;
 }
 
 timeset.addEventListener('click', useset);
+
+setInterval(standardwatch, 1000);
+
 }
-
-
 document.addEventListener('DOMContentLoaded', init);
