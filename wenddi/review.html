@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/best.css"/>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <title>Wenddi REVIEW</title>
+</head>
+<body>
+        <header>
+                <a href="./index.html">W</a>
+                <span>Wenddi BEST 후기등록</span>
+                <div id="menu">menu</div>
+            </header>
+            <div id="menu_l">
+               <ul id="top">
+                   <a><li><img src="./image/menu_c.png" id="menu_l_c"></li></a>
+                   <a href="./login.html"><li>로그인</li></a>
+                   <a><li>마이페이지</li></a>
+                   <a><li>FAQ</li></a>
+               </ul>
+               <div id="middle">
+                   <div id="login">
+                        <img src="./image/menu_use.png" alt="">
+                        <p>홍길동님 안녕하세요.<br>오늘도 즐거운 하루되세요 :)</p>
+                   </div>
+                    <ul id="a">
+                   <a href="./introduction.html"><li>Wenddi 소개</li></a>
+                   <a href="./story.html"><li>스토리 신청하기</li></a>
+                   <a><li>BEST</li></a>
+                       <ul id="in">
+                            <a><li>- 후기 등록하기</li></a>
+                            <a href="./best.html"><li>- 후기 구경하기</li></a>
+                       </ul>
+               </ul>
+            </div>
+            </div>
+    <section>
+        <h1>REVIEW</h1>
+        <hr>
+        <table>
+            <tr>
+                <td>작성자</td>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <td>제목</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td><textarea placeholder="이곳에 내용를 입력해주세요."></textarea></td>
+            </tr>
+            <tr>
+                <td>사진첨부</td>
+                <td> <div id="imgup">
+                        <input type="text" readonly="readonly" id="file_route" value=""><a class="popup-btn" href="#"><img src="./image/img_up.png" id="up"></a>
+                        <div class="popup-wrap">
+                                <div class="popup-box">   
+                                        <div class="imgs_wrap">
+                                                <img id="img" />
+                                        </div>    
+                                        *사진을 올려주세요.*
+                                        <div class="input_wrap">
+                                                
+                                                <label>파일선택
+                                                <input type="file" id="input_imgs" value="파일선택" onchange="javascript:document.getElementById('file_route').value=this.value" multiple/></label>     
+                                        </div>
+                                       
+                                        <a class="close-btn popup-close" href="#">올리기</a>
+                                </div>
+                        </div>
+                </div> </td>
+            </tr>
+            <tr>
+                <td>비밀번호 입력</td>
+                <td><input type="password"></td>
+            </tr>
+        </table>
+        <div class="row">
+        <a href="./review.html" class="cancel">취소</a>
+        <a href="./best.html" class="ok">등록</a>
+         </div>
+    </section>
+<script>
+        (function($){
+            $('#menu').on('click',function(){
+                $('#menu_l').css({'right':0})
+            })
+            $('#menu_l_c').on('click',function(){
+                $('#menu_l').css({'right':-9999})
+            })
+    
+            
+            $('.popup-btn').click(function(e) {
+            $('.popup-wrap').fadeIn(250);
+            $('.popup-box').removeClass('transform-out').addClass('transform-in');
+
+            e.preventDefault();
+            });
+
+            $('.popup-close').click(function(e) {
+            $('.popup-wrap').fadeOut(500);
+            $('.popup-box').removeClass('transform-in').addClass('transform-out');
+
+            e.preventDefault();
+            });
+
+            var sel_files = [];
+                $(document).ready(function() {
+                        $("#input_imgs").on("change", handleImgFileSelect);
+                    }); 
+            
+                    function fileUploadAction() {
+                        console.log("fileUploadAction");
+                        $("#input_imgs").trigger('click');
+                    }
+            
+                    function handleImgFileSelect(e) {
+            
+                        // 이미지 정보들을 초기화
+                        sel_files = [];
+                        $(".imgs_wrap").empty();
+            
+                        var files = e.target.files;
+                        var filesArr = Array.prototype.slice.call(files);
+            
+                        var index = 0;
+                        filesArr.forEach(function(f) {
+                            if(!f.type.match("image.*")) {
+                                alert("확장자는 이미지 확장자만 가능합니다.");
+                                return;
+                            }
+            
+                            sel_files.push(f);
+            
+                            var reader = new FileReader();
+                            reader.onload = function(e) {
+                                var html = "<a href=\"javascript:void(0);\" id=\"img_id_"+index+"\"><img src=\"" + e.target.result + "\" data-file='"+f.name+"' class='selProductFile' ></a>";
+                                $(".imgs_wrap").append(html);
+                                index++;
+            
+                            }
+                            reader.readAsDataURL(f);
+
+                       
+                        });
+                    }
+               
+            
+        })(jQuery);
+    </script>
+
+</body>
+</html>

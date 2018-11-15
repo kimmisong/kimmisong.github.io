@@ -1,0 +1,134 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration:none;        
+}
+a:link, a:visited, a:hover{
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+ul{list-style:none;}
+header{
+    position: fixed;
+    left: 45px;
+    top: 10px;
+    font-size: 80px;
+    font-family: 'Midnight Valentine';
+    z-index: 999;   
+    color: #fff; 
+}
+header>a, a:link, a:visited, a:hover{color: #fff;}
+#menu{
+    background:url(../image/menu.png);background-size:cover;
+    font-size: 0;
+    color: transparent;
+    text-indent: -9999px;
+    position: fixed;
+    right: 25px;
+    top:30px;
+    width: 46px;
+    height: 45px;cursor:pointer;}
+#menu_l a:link,#menu_l a:visited{color: black}
+#menu_l a:hover{color: #f45658}
+#menu_l{position:fixed;right: -9999px;width: 25vw;height: 100vh;z-index: 999;background-color:#fff;text-align: center;padding: 2% 0; font-size: 1rem;    overflow:auto;}
+#menu_l #top{display: flex; justify-content: center;align-items: center;justify-content : space-between;padding: 0 5%;}
+#menu_l #top img{width: 3vw;}
+#menu_l #top li{width:100%;cursor:pointer;}
+#login{margin-top: 5vh;cursor: default;}
+#login>img{margin-bottom: 5vh;width: 6vw;}
+#menu_l #a{font-size: 1.2rem; padding: 20px 0;}
+#menu_l #a li{padding: 10px 0}
+#menu_l #a>a li{padding: 30px 0;border-top: 1px solid #dedede;cursor:pointer;width: 80%;margin-left: 10%;}
+#menu_l #in{font-size: 0.8rem;cursor:pointer;border-top: 1px solid #dedede;width: 80%;margin-left: 10%;}
+#menu_l #in li{padding-top: 20px;padding-bottom: 0;}
+
+

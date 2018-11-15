@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/invitation2.css"/>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <title>청첩장예시_2</title>
+</head>
+<body>
+    <section id="explanation">
+        <img src="./image/i0.png">
+    </section>
+    <section id="i0" class="index">
+        <img src="./image/i2_1.png">
+    </section>
+    <section class="inrto">
+        <article id="travel">
+            <img src="./image/q2_l.png" alt="">
+            <h1 class="italic">01.데이트</h1>
+        </article>
+    </section>
+    <section id="travel_a">
+            <article id="travel_l">
+                <h1>Date</h1>
+                <!-- <img src="./image/i2_2_r.png" alt=""> -->
+                <h2>2016.08.16 동물원 데이트</h2>
+                <p>시간이 좀 흐르고 일년이 좀 되지 않았을 때 같이 동물원을간 적이 있어요.<br>
+                        주하가 평소 동물을 정말 좋아하는데 너무 좋아했던 기억이나요.<br>
+                       앵무새를 가까이서 직접 볼 기회가 생겼는데 
+                       그때 손바닥에 올려보고 좋아하는 모습이에요 
+                       </p>
+            </article>
+            <article id="travel_r">
+            </article>
+        </section>
+        <section class="inrto">
+            <article id="Fall">
+                <img src="./image/i2_3.png" alt="">
+                <h1 class="italic">02.커플사진</h1>
+            </article>
+        </section>
+        <section id="Fall_a">
+                <article id="Fall_l">
+                </article>
+                <article id="Fall_r">
+                    <h1>Couple</h1>
+                    <img src="./image/i2_3_r.png" alt="">
+                    <h2>2016.09.13 커플 웨딩 사진</h2>
+                    <p>제가 평소 사진 찍는 것을 좋아하는데  사귀고 연애 초반에<br> 
+                            데이트를 하다가 처음으로 웨딩 커플옷을 같이 입게<br>
+                            되었는데 그때 그 설레는 마음으로 찍었어요
+                             
+                            </p>
+                </article>
+        </section>
+        <section class="inrto">
+            <article id="Meter">
+                <img src="./image/i2_4.png" alt="">
+                <h1 class="italic">03. 여행</h1>
+            </article>
+        </section>
+        <section id="Meter_a">
+            <article id="Meter_l">
+                <h1>Travel</h1>
+                <!-- <img src="./image/i1_4_l.png" alt=""> -->
+                <h2>2017.05.09 제주도 여행</h2>
+                <p>제주도로 가는 비행기에서도 도착해서도 무척 설레고<br>
+                        신났던 것 같아요첫 여행이라 그냥 공항에서 출발 할 때 부터<br>
+                        도착해서 까지 다 생생히 기억나요.
+                </p>
+            </article>
+            <article id="Meter_r">
+                </article>
+        </section>
+        <section class="inrto">
+                <article id="Fall">
+                    <img src="./image/i2_4_l.png" alt="">
+                    <h1 class="italic">04.반한점</h1>
+                </article>
+            </section>
+            <section id="Fall_a">
+                    <article id="Fall_lo">
+                    </article>
+                    <article id="Fall_r">
+                        <h1>Fall in Love</h1>
+                        <img src="./image/i2_5_l.png" alt="">
+                        <h2>2015.01.13 반한 점</h2>
+                        <p>남자친구가 평소 동물을 정말 좋아하는데<br>
+                                애기도 좋아하는 그런 모습이 다정하고 가정적인 모습이 좋았던 것 같아요
+                                </p>
+                    </article>
+            </section>
+        <section id="end">
+                <img src="./image/I2_6.jpg" alt="">
+        </section>
+        <section id="end_1">
+        </section>
+        <!-- <section>
+            <article id="Bless">
+                <h1>Bless me</h1>
+                <img src="./image/i1_6.png" alt="">
+                <p><span>/</span><br>서로가 서로를 만나 하나가 되기까지 이제 저희
+                    두 사람 평생 한 곳을 바라보며 살고자 합니다.<br>
+                   부디 참석하시어 저희의 새로운 출발을 
+                   지켜봐 주시기 바랍니다.<br>늘 처음의 
+                   마음처럼 행복하게 살겠습니다.
+                    </p>
+                    </article>
+            </section> -->
+            <section id="end_3">
+                    <img src="./image/i2_11.png" alt="">
+            </section>  
+            <section id="end_3">
+                    <img src="./image/i2_12.png" alt="">
+            </section>  
+            <section id="end_3">
+                    <img src="./image/i2_13.png" alt="">
+            </section>  
+            <section id="end_2">
+                    <img src="./image/I2_9.png" alt="">
+            </section>      
+            <section id="page">
+                <div id="prev"></div>
+                <div id="next"></div>
+            </section>
+    <script>
+         $('body').css({'overflow':'hidden'});
+        $('section').hide();
+        $('#prev').css({'visibility':'hidden'});
+        $('#i0').fadeIn(1500,function(){
+            $('#page').show(function(){
+                $('#explanation').show();
+            });
+        });
+        $('#explanation').on('click',function(){
+            $('#explanation').addClass('end')
+        });
+        (function($){
+            var i = 1;
+
+            $('#next').on('click.nex',function(){
+                $('section').eq(i).fadeOut();
+                i++
+                $('section').eq(i).fadeIn();
+                $('#prev').css({'visibility':'visible'})
+                if(i == 14){
+                    i = 14;
+                    $('#next').css({'visibility':'hidden'});
+                }
+            });
+            $('#prev').on('click.pre',function(){
+                $('section').eq(i).fadeOut();
+                i--
+                $('section').eq(i).fadeIn();
+                $('#next').css({'visibility':'visible'})
+                if(i == 1){
+                    i = 1;
+                    $('#prev').css({'visibility':'hidden'});
+                }
+            })
+
+     
+
+})(jQuery);
+</script>
+</body>
+</html>

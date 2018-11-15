@@ -1,0 +1,26 @@
+hmtl{overflow: hidden}
+section{width: 100%;height: 100vh;}
+.help{height: 10%}
+.article{height: 90%;width: 100%}
+.none{display: none}
+.helv{display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center;}
+.act{padding:5%;opacity:0;border-top: 3px solid #fff;border-bottom:3px solid #fff;cursor: pointer;}
+
+#index{background:linear-gradient(to right, #eb3349, #f45c43);display: flex;align-items: center;justify-content: center}
+#index h1{font-size: 50px;text-align: center;color: #fff;border: 3px solid #fff;padding: 60px;cursor: pointer}
+#index h1:hover{box-shadow: 10px 10px #eb3349}
+#f1{background:linear-gradient(to right,#38ef7d,#11998e);display: flex;flex-direction: column;position: relative}
+#f1 h1{font-size: 2rem;color:#fff;}
+.act h1{font-size: 3rem !important}
+#f1 p{color:#fff;padding-top:15px;}
+#f1 span{position: absolute;display:block;width:50px;height:50px;background-color: #1c92d2;}
+#f2{background: linear-gradient(to top, #00d2ff, #3a7bd5)}
+#f3{background: linear-gradient(to left, #a1ffce, #faffd1)}
+
+
+/* 애니메이션 */
+@keyframes line{
+    from{
+       
+    }
+}

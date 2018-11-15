@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wenddi 스토리 신청하기</title>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/css.css"/>
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            'use strict';
+            angular.module('app', ['colorPicker']);
+        }());
+        var showPopup = function(){window.open("imgUpPopup.html", "a", "width=400, height=300, left=100, top=50"); }
+    </script>
+</head>
+<body>
+        <header>
+                <a href="./index.html" id="rogo"><img src="./image/rogo_g.png" alt=""></a>
+                <div class="position">
+                        <span></span>
+                        <div id="menu">menu</div>
+                </div>          
+        </header>
+        <div id="menu_l">
+                        <ul id="top">
+                            <a><li><img src="./image/menu_c.png" id="menu_l_c"></li></a>
+                            <a href="./login.html"><li>로그인</li></a>
+                            <a><li>마이페이지</li></a>
+                            <a><li>FAQ</li></a>
+                        </ul>
+                        <div id="middle">
+                            <div id="login">
+                                <img src="./image/menu_use.png" alt="">
+                                <p>홍길동님 안녕하세요.<br>오늘도 즐거운 하루되세요 :)</p>
+                            </div>
+                            <ul id="a">
+                            <a href="./introduction.html"><li>Wenddi 소개</li></a>
+                            <a href="./story.html"><li>스토리 신청하기</li></a>
+                            <a><li>BEST</li></a>
+                                <ul id="in">
+                                    <a href="./review.html"><li>- 후기 등록하기</li></a>
+                                    <a  href="./best.html"><li>- 후기 구경하기</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+        <section id="q_index">                
+                <article id="q_intro_l">         
+                        <div id="qi_l">
+                                <h2>WENDDI DESIGN</h2>
+                                <h3>Make a wedding invitation</h3>
+                                <div class="row">
+                                        <ul>
+                                                <li><img src="./image/q_l_1.png" alt="STORY"></li>
+                                                <li>STORY</li>
+                                                <li>예비부부들의 스토리를 토대로 디자인을 제작해 드립니다.</li>
+                                        </ul>
+                                        <ul>
+                                                <li><img src="./image/q_l_2.png" alt="CONCEPT"></li>
+                                                <li>CONCEPT</li>
+                                                <li>분석을 통해 컨셉을 맞추어 진행합니다.</li>
+                                        </ul>
+                                        <ul>
+                                                <li><img src="./image/q_l_3.png" alt="GREAT"></li>
+                                                <li>GREAT</li>
+                                                <li>모바일 청첩장 뿐만 아니라 포토북과 오프라인 청첩장을 옵션에 추가하실 수 있습니다.</li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <div id="q_1_l">
+                                <div class="figure_no">
+                                        <img src="./image/q1_l.png" alt="일러스트" class="q1_btn_l"></div>
+                                <div class="text_q">
+                                        <a href="" class="q1_btn_l">
+                                        <span>ILLUSTRATION</span><br/>
+                                        <span>일러스트로 스토리 구성</span></a>
+                                </div>
+                        </div>
+                </article>     
+                <div class="triangle"></div>                
+                <article id="q_intro_r">
+                        <div id="qi_r">                       
+                                <img src="./image/q_r.png" alt="q_r_couple">
+                                <a href="" class="btn">START</a>
+                        </div>
+                        <div id="q_1_r"> 
+                                <div class="figure">
+                                        <img src="./image/q1_r.png" alt="일러스트,사진" class="q1_btn_r"></div>
+                                <div class="text_q">
+                                        <a href="" class="q1_btn_r">
+                                        <span>ILLUSTRATION + PICTURE</span><br/>
+                                        <span>일러스트 + 사진으로 스토리 구성</span></a>
+                                </div>
+                        </div>
+                </article>                
+        </section>  
+        <div id="q_nu"><span id="q_ck">02</span><br/><div id="line"></div><br/>07</div>      
+        <section id="q_2">
+                <div id="q_2_a">
+                <article class="q_2_l">
+                        <div class="figure">
+                                <img id="k_img" src="./image/q2_l.png" alt="키워드"></div>
+                </article>
+                <article class="q_2_r">
+                        <div class="text">
+                                <h2>KEYWORD</h2>
+                                <span>키워드를 선정하여 주세요. ( 3~4개 제한)</span>
+                        </div> 
+                                <form>
+                                        <input type="checkbox" name="kword" id="k1" class="hide-checkbox" value="3" /><label for="k1">첫만남</label><br/>
+                                        <input type="checkbox" name="kword" id="k2" class="hide-checkbox" value="4"/ ><label for="k2">첫키스</label><br/>
+                                        <input type="checkbox" name="kword" id="k3" class="hide-checkbox" value="5" /><label for="k3">데이트</label><br/>
+                                        <input type="checkbox" name="kword" id="k4" class="hide-checkbox" value="6" /><label for="k4">여행</label><br/>
+                                        <input type="checkbox" name="kword" id="k5" class="hide-checkbox" value="7" /><label for="k5">기념일</label><br/>
+                                        <input type="checkbox" name="kword" id="k6" class="hide-checkbox" value="8" /><label for="k6">프로포즈</label><br/>
+                                        <input type="checkbox" name="kword" id="k7" class="hide-checkbox" value="9" /><label for="k7">위기/극복</label><br/>
+                                        <input type="checkbox" name="kword" id="k8" class="hide-checkbox" value="10" /><label for="k8">반한점</label><br/>
+                                        <input type="checkbox" name="kword" id="k9" class="hide-checkbox" value="11" /><label for="k9">결혼을 결심한 계기</label><br/>
+                                </form>
+                        
+                </article>                
+                </div>
+                <div class="next2"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>                
+        </section>
+        <section id="q_3">
+                <div id="q_3_a">
+                <article class="q_3_l">
+                        <div class="figure">
+                                <img src="./image/ani/q3_l_0.png" alt="첫만남" id="ani_3"></div>
+                                <span id="guide">이미지를 클릭해보세요:)</span>
+                </article>
+                <article class="q_3_r">
+                        <div class="text_s">
+                                <h2>FIRST MEETING <span class="ti_s">첫만남</span></h2>
+                                <span>키워드에 해당하는 에피소드를 적어주세요.</span>
+                                Q. 언제, 어디서 처음 만나셨나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 어떻게 만나셨나요 ?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 서로의 첫인상은 어떠했나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 기억에 남는 일이 있나요?<br/>
+                                <textarea placeholder=""></textarea>
+                        </div>
+                </article>                
+        </div>
+        <div class="next3"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>
+        <section id="q_4">
+                <div id="q_4_a">
+                <article class="q_4_l">
+                        <div class="figure">
+                                <img src="./image/ani/q4_l_0.png" alt="첫키스" id="ani_4"></div>
+                                <span class="guide">이미지를 클릭해보세요:)</span>
+                </article>
+                <article class="q_4_r">
+                        <div class="text_s">
+                                <h2>FIRST KISS <span class="ti_s">첫키스</span></h2>
+                                <span>키워드에 해당하는 에피소드를 적어주세요.</span>
+                                Q. 언제, 어디서 처음 하셨나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 당시 상황이 어떠했나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 기억에 남는 일이 있나요?<br/>
+                                <textarea placeholder=""></textarea>
+                        </div>    
+                </article>
+                </div>
+                <div class="next4"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+         </section>
+        <section id="q_5">
+                <div id="q_5_a">
+                <article class="q_5_l">
+                        <div class="figure">
+                                <img src="./image/ani/q5_l_60.png" alt="데이트" id="ani_5"></div>
+                                <span class="guide">이미지를 클릭해보세요:)</span>
+                </article>
+                <article class="q_5_r">
+                        <div class="text_s">
+                                <h2>DATE <span class="ti_s">데이트</span></h2>
+                                <span>키워드에 해당하는 에피소드를 적어주세요.</span>
+                                Q. 기억에 남는 데이트가 있나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 언제, 어디서 했나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 커플만의 특별한 데이트 방식이 있나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                        </div>    
+                </article>
+                </div>
+                <div class="next5"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>
+        <section id="q_6">
+                <div id="q_6_a">
+                <article class="q_6_l">
+                        <div class="figure">
+                                <img src="./image/ani/q6_l_0.png" alt="여행" id="ani_6"></div>
+                                <span class="guide">이미지를 클릭해보세요:)</span>
+                </article>
+                <article class="q_6_r">
+                        <div class="text_s">
+                                <h2>TRAVEL <span class="ti_s">여행</span></h2>
+                                <span>키워드에 해당하는 에피소드를 적어주세요.</span>
+                                Q. 언제, 어디로 갔나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 무엇을 하셨나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 여행 중 기억에 남는 일이 있나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                        </div>   
+                </article>
+                </div>
+                <div class="next6"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>
+        <section id="q_7">
+                <div id="q_7_a">
+                <article class="q_7_l">
+                        <div class="figure">
+                                <img src="./image/ani/q7_l_0.png" alt="기념일" id="ani_7"></div>
+                                <span class="guide">이미지를 클릭해보세요:)</span>
+                </article>
+                <article class="q_7_r">
+                        <div class="text_s">
+                                <h2>ANNIVERSARY <span class="ti_s">기념일</span></h2>
+                                <span>키워드에 해당하는 에피소드를 적어주세요.</span>
+                                Q. 언제, 무슨 기념일이 였나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 무엇을 하셨나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 기억에 남는 일이 있나요?<br/>
+                                <textarea placeholder=""></textarea>
+                        </div>    
+                </article>
+                </div>
+                <div class="next7"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>
+        <section id="q_8">
+                <div id="q_8_a">
+                <article class="q_8_l">
+                        <div class="figure">
+                                <img src="./image/ani/q8_l_0.png" alt="프로포즈" id="ani_8"></div>
+                                <span class="guide">이미지를 클릭해보세요:)</span>
+                </article>
+                <article class="q_8_r">
+                        <div class="text_s">
+                                <h2>PROPOSE <span class="ti_s">프로포즈</span></h2>
+                                <span>키워드에 해당하는 에피소드를 적어주세요.</span>
+                                Q. 언제, 어디서 했나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 누가 어떻게 프로포즈를 했나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 기억에 남는 일이 있나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                        </div>
+                         
+                </article>
+                </div>
+                <div class="next8"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>
+        <section id="q_9">
+                <div id="q_9_a">
+                <article class="q_9_l">
+                        <div class="figure">
+                                <img src="./image/ani/q9_l_0.png" alt="위기/극복" id="ani_9"></div>
+                                <span class="guide">이미지를 클릭해보세요:)</span>
+                </article>
+                <article class="q_9_r">
+                        <div class="text_s">
+                                <h2>CRISIS <span class="ti_s">위기</span></h2>
+                                <span>키워드에 해당하는 에피소드를 적어주세요.</span>
+                                Q. 언제 위기가 왔었나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 왜 위기가 왔었나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 어떻게 극복하셨나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                        </div>
+                       
+                </article>
+                </div>
+                <div class="next9"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>
+        <section id="q_10">
+                <div id="q_10_a">
+                <article class="q_10_l">
+                        <div class="figure">
+                                <img src="./image/ani/q10_l_0.png" alt="반한 점" id="ani_10"></div>
+                                <span class="guide">이미지를 클릭해보세요:)</span>
+                </article>
+                <article class="q_10_r">
+                        <div class="text_s">
+                                <h2>FALL IN LOVE <span class="ti_s">반한점</span></h2>
+                                <span>키워드에 해당하는 에피소드를 적어주세요.</span>
+                                Q. 상대의 어떤 모습에 반했나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q.사귀게 되었던 결정적인 이유가 무엇인가요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 어떻게 사귀게 되었나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                        </div>    
+                </article>
+                </div>
+                <div class="next10"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>  
+        <section id="q_11">
+                <div id="q_11_a">
+                <article class="q_11_l">
+                        <div class="figure">
+                                <img src="./image/ani/q11_l_0.png" alt="결혼결심" id="ani_11"></div>
+                                <span class="guide">이미지를 클릭해보세요:)</span>
+                </article>
+                <article class="q_11_r">
+                        <div class="text_s">
+                                <h2>MOTIVE <span class="ti_s">결혼을 결심한 계기</span></h2>
+                                <span>키워드에 해당하는 에피소드를 적어주세요.</span>
+                                Q. 결혼을 결심하게 된 결정적인 이유가 무엇인가요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 당시의 상황이 어떠했나요?<br/>
+                                <textarea placeholder=""></textarea><br/>
+                                Q. 기억에 남는 일이 있나요?<br/>
+                                <textarea placeholder=""></textarea>
+                        </div>
+                </article>
+                </div>
+                <div class="next11"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>
+        <section id="q_12">
+                <div id="q_12_a">
+                <article class="q_12_l">
+                        <span>일러스트에 나올 객체를 선택 하여 주세요.</span>
+                        <div class="figure">
+                                <form>
+                                        <label for="i">
+                                                <img src="./image/q12_l.png" alt="인물">인물<input type="radio" name="ai" id="i" value="i" />
+                                        </label>
+                                        <label for="animal">
+                                                <img src="./image/q12_c.png" alt="동물">동물<input type="radio" name="ai" id="animal" value="animal" />
+                                                <div class="row">
+                                                        신랑<input type="text" value="" placeholder="원하시는 동물의 이름을 입력" class="input_text"><br/>
+                                                        신부<input type="text" value="" placeholder="원하시는 동물의 이름을 입력" class="input_text">
+                                                </div>
+                                        </label>              
+                                        <label for="etc">
+                                                <img src="./image/q12_r.png" alt="그외">그 외<input type="radio" name="ai" id="etc" value="etc" />
+                                                <div class="row">
+                                                        신랑<input type="text" value="" placeholder="원하시는 기타 이름을 입력" class="input_text"><br/>
+                                                        신부<input type="text" value="" placeholder="원하시는 기타 이름을 입력" class="input_text">
+                                                </div>
+                                        </label>
+                                </form>
+                        </div>
+                </article>
+                </div>
+                <div class="next12"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>
+        <section id="q_13">
+                <div id="q_13_a">
+                <article class="q_13_l">
+                        <span>실사의 정도를 선택하여 주세요.</span>
+                        <span>가로로 마우스를 움직여주세요.</span>
+                        <div class="range-slider">
+                                <form>
+                                        <input id="nbSliders" class="input-range" name="nbSliders" type="range" value="1" min="1" max="5" oninput="output.value=this.value">
+                                        <br/><output class="output" name="output" for="range">
+                                        1</output>단계
+                                </form>
+                        </div>   
+                        <img src="./image/q13_1.png" alt="간단하게" id="slider_img">
+                </article>
+                </div>
+                <div class="next13"><a href=""><img src="./image/q_next.png" alt="next button" ></a></div>
+        </section>
+        <section id="q_14">
+                <div id="q_14_a">       
+                <article id="q14_l">
+                        <div class="figure">
+                                <img src="./image/q14_l.png" alt="색상선택"></div>
+                        <div class="text_q">
+                                <span>DESIGN COLOR</span> 
+                        </div> 
+                        <div class="next14"><a href=""><img src="./image/q14_next.png" alt="next button" ></a></div>         
+                </article>
+                <div class="triangle" id="t14_h"></div>
+                <article id="q14_r">                       
+                        <div ng-app="app">
+                                <color-picker color="foo"></color-picker>
+                        </div>
+                        <span>색상을 선택해주세요.</span>                        
+                </article>
+                </div>                
+        </section>
+        <section id="q_15">        
+                        <article id="q15_l">
+                                <div class="figure">
+                                        <img src="./image/q15_l.png" alt="추가정보"></div>
+                        </article>
+                        <div class="triangle" id="t15_h"></div>
+                        <article id="q15_r">                        
+                                        <div class="text_s">
+                                                        <h2>DETAILED INFORMATION</h2>
+                                                        <span>추가 정보를 입력해 주세요.</span>
+                                                        Q. 도메인 주소<br/>
+                                                        <input type="text"><br/>
+                                                        Q. 신랑 이름<br/>
+                                                        <input type="text"><br/>
+                                                        Q. 신부 이름<br/>
+                                                        <input type="text"><br/>
+                                                        Q. 예식 날짜<br/>
+                                                        <input type="text"><br/>
+                                                        Q. 예식 장소 및 지도<br/>
+                                                        <input type="text">
+                                                        <a id="finish" href="#">완료 하기</a>
+                                                </div>
+                                
+                        </article>
+                </section>
+                <nav role="navigation" class="dot-nav">
+                        <ul>
+                                <li><span class="selected">&nbsp;</span></li>
+                                <li><span>&nbsp;</span></li>
+                                <li><span>&nbsp;</span>
+                                <ul id="episode"></ul></li>
+                                <li><span>&nbsp;</span></li>
+                                <li><span>&nbsp;</span></li>
+                                <li><span>&nbsp;</span></li>
+                                <li><span>&nbsp;</span></li>
+                        </ul>
+                </nav>
+                <div id="imgup">
+                        <a class="popup-btn" href="#">사진올리기</a>
+                        <div class="popup-wrap">
+                                <div class="popup-box">   
+                                        <div class="imgs_wrap">
+                                                <img id="img" />
+                                        </div>    
+                                        *에피소드에 해당하는 사진을 올려주세요.*
+                                        <div class="input_wrap">
+                                                
+                                                <label>파일선택
+                                                <input type="file" id="input_imgs" value="파일선택" onchange="javascript:document.getElementById('file_route').value=this.value" multiple/></label><input type="text" readonly="readonly" id="file_route" value="선택된 파일이 없음">      
+                                        </div>
+                                       
+                                        <a class="close-btn popup-close" href="#">올리기</a>
+                                </div>
+                        </div>
+                </div> 
+                <div id="confirming">                                
+                        <div class="popup-wrap2">
+                                <div class="popup-box2"> 
+                                        <a class="close-btn2 popup-close" href="#">x</a>      
+                                        <span>모든 항목들을 끝내시겠습니까?</span><br/>
+                                        <span>*완료버튼을 누를 시 수정은 콜센터나 Q	
+                                        &amp;A에 문의주세요.*</span><br/>
+                                        <button id="no">수정하기</button>
+                                        <button id="ok"><a href="./index.html">완료하기</a></button>
+                                </div>
+                                                
+                        </div>
+                </div>   
+    <script>
+            (function($){
+                [].forEach.call( document.querySelectorAll('.hide-checkbox'), function(element) {
+                    element.style.display = 'none';
+                });
+                $(document).ready(function(){
+                    $('textarea').on('keyup', function (e) {
+                    if (e.keyCode === 27) {
+                        $(this).val('');
+                    }});
+                });
+                                
+                $('label[for="k1"]').mouseover(function(){
+                  $('#k_img').attr('src','./image/q3_l.png');
+                 });
+                 $('label[for="k2"]').mouseover(function(){
+                  $('#k_img').attr('src','./image/q4_l.png');
+                 });
+                 $('label[for="k3"]').mouseenter(function(){
+                  $('#k_img').attr('src','./image/q5_l.png');
+                 });
+                 $('label[for="k4"]').mouseenter(function(){
+                  $('#k_img').attr('src','./image/q6_l.png');
+                 });
+                 $('label[for="k5"]').mouseenter(function(){
+                  $('#k_img').attr('src','./image/q7_l.png');
+                 });
+                 $('label[for="k6"]').mouseenter(function(){
+                  $('#k_img').attr('src','./image/q8_l.png');
+                 });
+                 $('label[for="k7"]').mouseenter(function(){
+                  $('#k_img').attr('src','./image/q9_l.png');
+                 });
+                 $('label[for="k8"]').mouseenter(function(){
+                  $('#k_img').attr('src','./image/q10_l.png');
+                 });
+                 $('label[for="k9"]').mouseenter(function(){
+                  $('#k_img').attr('src','./image/q11_l.png');
+                 });
+               
+                
+                 $(document).ready(function() {
+                        $('.popup-btn').click(function(e) {
+                        $('.popup-wrap').fadeIn(250);
+                        $('.popup-box').removeClass('transform-out').addClass('transform-in');
+
+                        e.preventDefault();
+                        });
+
+                        $('.popup-close').click(function(e) {
+                        $('.popup-wrap').fadeOut(500);
+                        $('.popup-box').removeClass('transform-in').addClass('transform-out');
+
+                        e.preventDefault();
+                        });
+                });
+                
+                $('#finish').click(function(e) {
+                $('.popup-wrap2').fadeIn(250);
+                $('.popup-box').removeClass('transform-out').addClass('transform-in');
+
+                e.preventDefault();
+                });
+
+                $('.popup-close').click(function(e) {
+                $('.popup-wrap2').fadeOut(500);
+                $('.popup-box').removeClass('transform-in').addClass('transform-out');
+
+                e.preventDefault();
+                });
+       
+                // 이미지 업로드
+                var sel_files = [];
+                $(document).ready(function() {
+                        $("#input_imgs").on("change", handleImgFileSelect);
+                    }); 
+            
+                    function fileUploadAction() {
+                        console.log("fileUploadAction");
+                        $("#input_imgs").trigger('click');
+                    }
+            
+                    function handleImgFileSelect(e) {
+            
+                        // 이미지 정보들을 초기화
+                        sel_files = [];
+                        $(".imgs_wrap").empty();
+            
+                        var files = e.target.files;
+                        var filesArr = Array.prototype.slice.call(files);
+            
+                        var index = 0;
+                        filesArr.forEach(function(f) {
+                            if(!f.type.match("image.*")) {
+                                alert("확장자는 이미지 확장자만 가능합니다.");
+                                return;
+                            }
+            
+                            sel_files.push(f);
+            
+                            var reader = new FileReader();
+                            reader.onload = function(e) {
+                                var html = "<a href=\"javascript:void(0);\" id=\"img_id_"+index+"\"><img src=\"" + e.target.result + "\" data-file='"+f.name+"' class='selProductFile' ></a>";
+                                $(".imgs_wrap").append(html);
+                                index++;
+            
+                            }
+                            reader.readAsDataURL(f);
+
+                       
+                        });
+                    }
+               
+
+                 //슬라이더 이미지변환               
+               $('#nbSliders').on('change', function(){
+		var i=$(this).val();
+                $('#slider_img').attr({src :'./image/q13_'+ i +'.png'});
+                $('.output').text(i);
+                });
+                // 색상추출
+                (function(){
+                'use strict';
+        
+                angular.module('app', ['colorPicker']);
+
+                angular.module('colorPicker', [])
+                .directive('colorPicker', [function () {
+
+                var updateEventListenerTargets = ['touchstart','touchmove','mouseup','mousemove'],
+                        clientX, clientY,
+                        mousedown = 0;
+
+                function ColorPicker() {
+                        // Initialize at center position with white
+                        this.ngModel = '#ffffff';
+                }
+
+                ColorPicker.$inject = [];
+
+                return {
+                        restrict: 'E',
+                        controller: ColorPicker,
+                        bindToController: true,
+                        controllerAs: 'colorPicker',
+                        scope: {
+                        ngModel: '=color'
+                        },
+                        replace: true,
+                        template: [
+                        '<div class="color-picker">',
+                                '<canvas width="350px" height="350px"></canvas>',
+                                '<span class="indicator">',
+                                '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="64" viewBox="0 0 25 32">',
+                                        '<path fill="#ffffff" d="M12.528 0c-6.943 0-12.528 5.585-12.528 12.528 0 10.868 12.528 19.472 12.528 19.472s12.528-9.585 12.528-18.792c0-6.868-5.66-13.208-12.528-13.208zM12.528 21.434c-4.981 0-9.057-4.075-9.057-9.057s4.075-9.057 9.057-9.057 9.057 4.075 9.057 9.057-4.075 9.057-9.057 9.057z"></path>',
+                                '</svg>',
+                                '<span class="selected-color"></span>',
+                                '</span>',
+                        '</div>'
+                        ].join(''),
+                        link: function (scope, el, attrs, colorPicker) {
+
+                        var canvas = el.find('canvas')[0];
+
+                        var context = canvas.getContext('2d');
+                        var x = canvas.width / 2;
+                        var y = canvas.height / 2;
+                        var radius = x;
+                        var counterClockwise = false;
+
+                        for(var angle=0; angle<=360; angle+=1){
+                                var startAngle = (angle-2)*Math.PI/180;
+                                var endAngle = angle * Math.PI/180;
+
+                                context.beginPath();
+                                context.moveTo(x, y);
+                                context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+                                context.closePath();
+
+                                var gradient = context.createRadialGradient(x, y, 0, x, y, radius);
+                                gradient.addColorStop(0,'hsl('+angle+', 10%, 100%)');
+                                gradient.addColorStop(1,'hsl('+angle+', 100%, 50%)');
+
+                                context.fillStyle = gradient;
+                                context.fill();
+                        }
+
+                        var updateColorPicker = function(e){
+                                e.preventDefault();
+
+                                if (e.type === 'mousemove' && !mousedown) { return; }
+
+                                clientX = (e.clientX) ? e.clientX : e.changedTouches[0].clientX;
+                                clientY = (e.clientY) ? e.clientY : e.changedTouches[0].clientY;
+
+                                var canvasOffset = canvas.getBoundingClientRect();
+                                var canvasX = Math.floor(clientX - canvasOffset.left);
+                                var canvasY = Math.floor(clientY - canvasOffset.top);
+
+                                // get current pixel
+                                var imageData = context.getImageData(canvasX, canvasY, 1, 1);
+                                var pixel = imageData.data;
+
+                                var indicator = el.find('span')[0];
+                                var selectedColor = indicator.getElementsByClassName('selected-color')[0];
+                                
+                                if(!pixel[pixel.length - 1]) {
+                                return;
+                                }
+
+                                var dColor = pixel[2] + 256 * pixel[1] + 65536 * pixel[0];
+
+                                colorPicker.ngModel = '#' + ('0000' + dColor.toString(16)).substr(-6);
+
+                                indicator.style.left    = canvasX + 'px';
+                                indicator.style.top     = canvasY - 32 + 'px';
+                                selectedColor.style.backgroundColor = colorPicker.ngModel;
+                                
+                                scope.$apply(function(){
+                                colorPicker.ngModel = colorPicker.ngModel;
+                                });
+                                $('#q14_r').css({'background-color': colorPicker.ngModel,'height':'100%'});
+                      };
+                        
+
+                        for (var i=0, len = updateEventListenerTargets.length; i<len; i++) {
+                                canvas.addEventListener(updateEventListenerTargets[i], updateColorPicker, false);
+                        }
+
+                        canvas.addEventListener('mousedown', function(){
+                                mousedown = 1;
+                        }, false);
+
+                        document.addEventListener('mouseup', function(){
+                                mousedown = 0;
+                        }, false);
+                        }
+                };
+                }]);
+        $('#q_1_l, #q_1_r, #q_2, #q_2_a, .next2, #q_3, #q_4, #q_5, #q_6, #q_7, #q_8, #q_9, #q_10, #q_11, #q_13, #q_14, #t14_h, #t15_h, #q_15, #q_nu').hide();
+        $('body').css({'overflow':'hidden'});
+        var dot_i = 0;
+        var dot = $('.dot-nav').find('span');
+        var dotSelect = function(i){
+            $(dot).removeClass('selected').eq(i).addClass('selected');
+        } 
+        $('#no').on('click',function(e){
+                e.preventDefault();
+                e.stopPropagation(); 
+                $('.popup-box').removeClass('transform-in').addClass('transform-out');
+                dotSelect(1);
+                $('#t14_h,#t15_h').stop().fadeOut(10,function(){
+                        $('#qi_l,#qi_r').stop().fadeOut(function(){
+                        $('.triangle, #q_2, #q_2_a, .next2').stop().fadeOut(function(){
+                                $('#q_index').stop().fadeIn(function(){
+                                dot_i = 1;
+                                po_text();
+                                $('#q_intro_l,#q_intro_r').stop().fadeIn();
+                                $('#q_1_l,#q_1_r').stop().fadeIn();
+                                $('.popup-wrap2').fadeOut(500);
+               
+                        });
+                });
+                });
+                });
+        })
+        
+                $(dot).eq(0).on('click',function(e){
+                e.preventDefault();
+                e.stopPropagation(); 
+                dotSelect(0);
+                $('#t14_h,#t15_h').stop().fadeOut(10,function(){
+                $('#q_1_l,#q_1_r').stop().fadeOut(function(){
+                        $('#q_2, #q_2_a, .next2').fadeOut(function(){
+                                $('#q_index').stop().fadeIn(function(){
+                                dot_i = 0;
+                                po_text();
+                                $('#q_intro_l,#q_intro_r').stop().fadeIn();
+                                $('#qi_l,#qi_r').stop().fadeIn();
+                                });
+                                });
+                        });
+                });               
+                });
+        $(dot).eq(1).on('click',function(e){
+                e.preventDefault();
+                e.stopPropagation(); 
+                dotSelect(1);
+                $('#t14_h,#t15_h').stop().fadeOut(10,function(){
+                        $('#qi_l,#qi_r').stop().fadeOut(function(){
+                        $('.triangle, #q_2, #q_2_a, .next2').stop().fadeOut(function(){
+                                $('#q_index').stop().fadeIn(function(){
+                                dot_i = 1;
+                                po_text();
+                                $('#q_intro_l,#q_intro_r').stop().fadeIn();
+                                $('#q_1_l,#q_1_r').stop().fadeIn();
+                        });
+                });
+                });
+                });
+        });
+        $(dot).eq(2).on('click',function(e){
+                e.preventDefault();
+                e.stopPropagation(); 
+                dotSelect(2);
+                $('#t14_h,#t15_h,#q_15').stop().fadeOut('fast',function(){
+                        $('.triangle, #q_index, #q_intro_l, #q_intro_r,#q_1_l, #q_1_r,.next2').stop().fadeOut(function(){
+                                dot_i = 2;
+                                po_text();
+                                if( $('#episode').find('span').length == cudot){
+                                        dotSelect(3);
+                                        }
+                                $('#q_2').stop().fadeIn(function(){
+                                $('#q_2_a,.next2').stop().fadeIn();
+                                });              
+                        });
+                });
+                
+        });        
+        $(dot).eq(3).on('click',function(e){
+                e.preventDefault(); 
+                e.stopPropagation(); 
+                dotSelect(3);
+                dot_i = 4;  
+                po_text();  
+                $('#t14_h,#t15_h').stop().fadeOut('fast',function(){          
+                $('.triangle, #q_index,#q_intro_l, #q_intro_r,#q_1_l, #q_1_r, #q_2, #q_2_a, .next2').stop().fadeOut(function(){
+                        $('#q_12').stop().fadeIn(function(){
+                        });
+                });
+                });
+        });
+        $(dot).eq(4).on('click',function(e){
+                e.preventDefault();
+                e.stopPropagation(); 
+                dotSelect(4);
+                dot_i = 5;
+                po_text();
+                $('#t14_h,#t15_h').stop().fadeOut('fast',function(){ 
+                $('.triangle,#q_index,#q_intro_l, #q_intro_r,#q_1_l, #q_1_r, #q_2, #q_2_a, .next2, #q_3, #q_4, #q_5, #q_6, #q_7, #q_8, #q_9, #q_10, #q_11,#q_12, #q_14, #q_15').stop().fadeOut(function(){
+                        $('#q_13').stop().fadeIn();
+                        });
+                });
+        });
+        $(dot).eq(5).on('click',function(e){
+                e.preventDefault();
+                e.stopPropagation(); 
+                dotSelect(5);
+                dot_i = 6;
+                po_text();
+                $('#t15_h').stop().fadeOut('fast',function(){
+                $('.triangle,#q_index,#q_intro_l, #q_intro_r,#q_1_l, #q_1_r, #q_2, #q_2_a, .next2, #q_3, #q_4, #q_5, #q_6, #q_7, #q_8, #q_9, #q_10, #q_11,#q_12, #q_13, #q_15').stop().fadeOut(function(){
+                        $('#q_14').stop().fadeIn();                        });
+                });
+        });
+        $(dot).eq(6).on('click',function(e){
+                e.preventDefault();
+                e.stopPropagation(); 
+                dotSelect(6);
+                dot_i = 7; 
+                po_text();
+                $('#t14_h').stop().fadeOut(function(){
+                $('.triangle,#q_index,#q_intro_l, #q_intro_r,#q_1_l, #q_1_r, #q_2, #q_2_a, .next2, #q_3, #q_4, #q_5, #q_6, #q_7, #q_8, #q_9, #q_10, #q_11, #q_12, #q_13, #q_14').stop().fadeOut(function(){
+                        $('#q_15').stop().fadeIn().css({'opacity':'1'});
+                        });
+                });            
+        });
+      
+        // 장면전환
+        $('.btn').click(function(e) {
+                e.preventDefault();                
+                $('#q_intro_l,#qi_l').stop().fadeOut('');
+                $('.triangle').stop().fadeOut('');          
+                dotSelect(1);                
+                dot_i = 1;
+                po_text();
+                $('#qi_r').stop().fadeOut('', function(){
+                        $('#q_intro_r').css({'display': ' fixed', 'left':'50%'});
+                        $('#q_intro_r').stop().animate({'width':'+='+100+'%','left': 0},500,function(){
+                                $('#q_intro_r').stop().animate({'width':'-='+ 50+'%','left': 50+'%'},500,
+                                function(){
+                                        $('#q_intro_l').stop().fadeIn('');
+                                        $('#q_intro_l').css({'width': '50%'});  
+                                        $('#q_intro_r').css({'display': 'flex','width': '50%','left': ''});
+                                        $('#q_1_l').stop().fadeIn();
+                                        $('#q_1_r').stop().fadeIn();
+                                });
+                        });   
+                        });
+                });
+
+        $('.q1_btn_l,.q1_btn_r').click(function(e) {
+        e.preventDefault();
+        dotSelect(2);
+        dot_i = 2;
+        po_text();              
+        $('#q_index').fadeOut(function(){
+                $('#q_2').fadeIn(function(){
+                        $('#q_2_a,.next2').fadeIn();
+                        $('#q_1_l,#q_1_r,#q_intro_r,#q_intro_l').fadeOut();
+                        
+                });                
+        });
+        })
+        
+        var s = -1;
+        function selectDelRow() {
+                var dotS ='';
+                var checkRow = []; 
+                var checkCnt = 0; 
+                var checkLast = '';                
+                var cnt = 0;
+                var a = 0;
+                var chk = document.querySelectorAll('.hide-checkbox:checked');
+                var len = chk.length; 
+                var html = '';
+                dot_i = 4;
+                console.log(chk,len);  
+                for(var i = 0;i < len;i += 1){
+                        html += '<li><span>&nbsp;</span></li>';
+                }
+                $('#episode').html(html);
+                // for(var i=0; i<len; i++){
+                // if(chk[i].checked == true){
+                // checkCnt++;        //체크된 체크박스의 개수
+                // checkLast = i;     //체크된 체크박스의 인덱스
+                //         }
+                // }
+                      
+                     
+                for(var i=0; i<len; i++){
+                if(chk[i].checked == true){  //체크가 되어있는 값 구분
+                checkRow[a] = chk[i].value;
+                $('#q_'+checkRow[a]).show();     
+                s = -1;
+                cudot = -1;   
+                dot_i = 3;       
+                // $('#episode').html('<li><span>&nbsp;</span></li>');
+                // a++                       
+                }    
+                }
+        }
+
+        var cudot = -1;
+        
+        var dotSelectSv = function(s){
+                var dotS = $('#episode').find('span');
+                $(dotS).removeClass('selected').eq(s).addClass('selected'); 
+        }
+        $('.next2').click(function(e){
+                e.preventDefault();
+                selectDelRow();
+                cudot++;
+                // dot_i = 3;
+                po_text();
+                imgupDle();
+                dotSelect(2);
+                $('#q_12').show()
+                $('#q_2').animate({'height':'0'},500,function(){ 
+                        $('#q_2,#q_2_a,.next2').hide();
+                        $('#q_2').animate({'height':'100vh'});
+                        s = s+1;
+                        dotSelectSv(s);
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                                dot_i = 4;
+                                po_text();
+                                
+                        }
+                })
+        })
+       
+
+        $('.next3').click(function(e){
+                e.preventDefault();  
+                cudot++;
+                console.log(dot_i);
+                // dot_i = 3;
+                po_text();
+                imgupDle();
+                dotSelect(2);          
+                $('#q_3').animate({'height':'0'},500,function(){
+                        $('#q_3').hide();
+                        $('#q_3').animate({'height':'100vh'});
+                        s = s+1;                 
+                        dotSelectSv(s);
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                                dot_i = 4;
+                                po_text();
+                                                            
+                        }
+                })
+        })
+        $('.next4').click(function(e){
+                e.preventDefault(); 
+                cudot++;
+                // dot_i = 3;
+                po_text(); 
+                imgupDle();
+                dotSelect(2);               
+                $('#q_4').animate({'height':'0'},500,function(){
+                        $('#q_4').hide();
+                        $('#q_4').animate({'height':'100vh'});   
+                        s = s+1;                
+                        dotSelectSv(s);
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);
+                                dot_i = 4;
+                                po_text();
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                               
+                        }
+                })
+        })
+        $('.next5').click(function(e){
+                e.preventDefault(); 
+                cudot++;
+                console.log(dot_i);
+                // dot_i = 3;
+                po_text();   
+                imgupDle();
+                dotSelect(2);            
+                $('#q_5').animate({'height':'0'},500,function(){
+                        $('#q_5').hide();
+                        $('#q_5').animate({'height':'100vh'});  
+                        s = s+1;                 
+                        dotSelectSv(s); 
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);
+                                dot_i = 4;
+                                po_text();
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                        }
+                })
+        })
+        $('.next6').click(function(e){
+                e.preventDefault();   
+                cudot++;
+                // dot_i = 3;
+                po_text();     
+                imgupDle(); 
+                dotSelect(2);      
+                $('#q_6').animate({'height':'0'},500,function(){
+                        $('#q_6').hide();
+                        $('#q_6').animate({'height':'100vh'});    
+                        s = s+1;                 
+                        dotSelectSv(s);
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);
+                                dot_i = 4;
+                                po_text();
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                        } 
+                })
+        })
+        $('.next7').click(function(e){
+                e.preventDefault();  
+                cudot++;
+                // dot_i = 3;
+                po_text();    
+                imgupDle();     
+                dotSelect(2);     
+                $('#q_7').animate({'height':'0'},500,function(){
+                        $('#q_7').hide();
+                        $('#q_7').animate({'height':'100vh'});   
+                        s = s+1;                
+                        dotSelectSv(s);
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);                                
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                                dot_i = 4;
+                                po_text();
+                                
+                        } 
+                })
+        })
+        $('.next8').click(function(e){
+                e.preventDefault();    
+                cudot++; 
+                // dot_i = 3;
+                po_text();      
+                imgupDle();
+                dotSelect(2);     
+                $('#q_8').animate({'height':'0'},500,function(){
+                        $('#q_8').hide();
+                        $('#q_8').animate({'height':'100vh'});    
+                        s = s+1;                 
+                        dotSelectSv(s);
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);
+                                dot_i = 4;
+                                po_text();
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                                
+                        }   
+                })
+        })
+        $('.next9').click(function(e){
+                e.preventDefault();     
+                cudot++;
+                // dot_i = 3;
+                po_text();        
+                imgupDle();
+                dotSelect(2);   
+                $('#q_9').animate({'height':'0'},500,function(){
+                        $('#q_9').hide();
+                        $('#q_9').animate({'height':'100vh'});
+                        s = s+1;               
+                        dotSelectSv(s);
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);
+                                dot_i = 4;
+                                po_text();
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                                
+                        }
+                })
+        })
+        $('.next10').click(function(e){
+                e.preventDefault();
+                cudot++; 
+                // dot_i = 3;
+                po_text();        
+                imgupDle();
+                dotSelect(2);       
+                $('#q_10').animate({'height':'0'},500,function(){
+                        $('#q_10').hide();
+                        $('#q_10').animate({'height':'100vh'});   
+                        s = s+1;                
+                        dotSelectSv(s);
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);
+                                dot_i = 4;
+                                po_text();
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                                
+                        }  
+                })
+        })
+        $('.next11').click(function(e){
+                e.preventDefault(); 
+                cudot++; 
+                // dot_i = 3;
+                po_text();         
+                imgupDle();
+                dotSelect(2);                        
+                $('#q_11').animate({'height':'0'},500,function(){
+                        $('#q_11').hide();
+                        $('#q_11').animate({'height':'100vh'});
+                        if( $('#episode').find('span').length == cudot){
+                                dotSelect(3);
+                                dot_i = 4;
+                                po_text();
+                                var l = $('#episode').find('span').length;
+                                $('#episode').find('span').children(l).removeClass('selected');
+                               
+                        }                              
+                })
+        })
+        $('.next12').click(function(e){
+                e.preventDefault(); 
+                $('#q_13').show();
+                dot_i = 5;
+                po_text();
+                imgupDle();
+                dotSelect(4);              
+                $('#q_12').animate({'height':'0'},500,function(){
+                        $('#q_12').hide();
+                        $('#q_12').animate({'height':'100vh'});
+                               
+                        
+                })
+        })
+        $('.next13').click(function(e){
+                e.preventDefault();
+                $('#q_14_a #t14_h').hide();   
+                $('#q_14').show();                          
+                $('#q_13').animate({'height':'0'},500,function(){ 
+                        $('#q_13').hide();
+                        $('#q_13').animate({'height':'100vh'});          
+                        $('#q_14_a #t14_h').fadeIn('fast');
+                        dotSelect(5);
+                        dot_i = 6;
+                        po_text(); 
+                })
+        })
+        $('.next14').click(function(e){
+                e.preventDefault();
+                $('#t15_h').hide();
+                $('#t14_h').hide();
+                $('#q_15').show();                        
+                $('#q_14').animate({'height':'0'},500,function(){
+                        $('#q_14').hide();
+                        $('#q_14').animate({'height':'100vh'});
+                        $('#t15_h').fadeIn('fast');
+                        dotSelect(6);
+                        dot_i = 7;
+                        po_text(); 
+                })
+        })
+        var po_text = function(){
+                switch(dot_i){
+                case 0 : 
+                $('.popup-btn').css({'opacity':'0','cursor': 'Default','font-size':'0','text-indent': '-9999px'});
+                $('#rogo img').attr('src','./image/rogo_g.png');
+                $('#line').css({'background-color':'#fff'});
+                $('.dot-nav').hide();
+                $('#rogo').css({'color':'#7eccbe'});
+                $('.position').css({'color':'#7eccbe'});
+                $('.position>span').css({'color':'#7eccbe'});
+                $('.dot-nav>ul>li>span').removeClass('pink_back');
+                $('.dot-nav>ul>li>span').removeClass('pink_back_sele');
+                $('#episode>li>span').removeClass('pink_border');
+                $('#episode>li>span').removeClass('pink_border_sele');
+                $('#menu').css({'background':'url(./image/menu.png)','background-repeat' : 'no-repeat', 'background-position':'center center','background-size':'cover', 'width': '46px','height':'46px'});
+                
+                $('#q_nu').css({'color':'#fff'}).hide();
+                
+                
+                $('.position>span').html('<span id="p">스토리신청</span>');
+                break;
+                case 1:
+                $('.popup-btn').css({'opacity':'0','cursor': 'Default','font-size':'0','text-indent': '-9999px'});
+                $('#rogo img').attr('src','./image/rogo_g.png');
+                $('#line').css({'background-color':'#fff'});
+                $('.dot-nav').fadeIn();
+                $('#rogo').css({'color':'#7eccbe'});
+                $('.position').css({'color':'#7eccbe'});
+                $('.position>span').css({'color':'#7eccbe'});
+                $('.dot-nav>ul>li>span').removeClass('pink_back');
+                $('.dot-nav>ul>li>span').removeClass('pink_back_sele');
+                $('#episode>li>span').removeClass('pink_border');
+                $('#episode>li>span').removeClass('pink_border_sele');
+                $('#menu').css({'background':'url(./image/menu.png)','background-repeat' : 'no-repeat', 'background-position':'center center','background-size':'cover', 'width': '46px','height':'46px'});
+                $('#q_nu').css({'color':'#fff'}).hide();
+                
+                $('.position>span').html('스토리신청 > <span id="p">스토리 구성요소 선택</span>');
+                break;
+                case 2:
+                $('.popup-btn').css({'opacity':'0','cursor': 'Default','font-size':'0','text-indent': '-9999px'});
+                $('#rogo img').attr('src','./image/rogo_w.png');
+                $('#line').css({'background-color':'#fff'});
+                $('#q_ck').text('02');
+                $('#q_nu').css({'color':'#fff'}).fadeIn();
+                $('.dot-nav').fadeIn();
+                $('#rogo').css({'color':'#fff'});
+                $('.position').css({'color':'#fff'});
+                $('.position>span').css({'color':'#fff'});
+                $('.dot-nav>ul>li>span').removeClass('pink_back');
+                $('.dot-nav>ul>li>span').removeClass('pink_back_sele');
+                $('#episode>li>span').removeClass('pink_border');
+                $('#episode>li>span').removeClass('pink_border_sele');
+                $('#menu').css({'background':'url(./image/menu.png)','background-repeat' : 'no-repeat', 'background-position':'center center','background-size':'cover', 'width': '46px','height':'46px'});
+                
+
+               
+                $('.position>span').html('스토리신청 > <span id="p">키워드 선택</span>');
+                break;
+                case 3:
+                $('#line').css({'background-color':'#fff'});
+                $('#q_ck').text('03');
+                $('.dot-nav').fadeIn();
+                $('#rogo img').attr('src','./image/rogo_w.png');
+                $('#rogo').css({'color':'#fff'});
+                $('.position').css({'color':'#fff'});
+                $('.position>span').css({'color':'#fff'});
+                $('.dot-nav>ul>li>span').removeClass('pink_back');
+                $('.dot-nav>ul>li>span').removeClass('pink_back_sele');
+                $('#episode>li>span').removeClass('pink_border');
+                $('#episode>li>span').removeClass('pink_border_sele');
+                $('#menu').css({'background':'url(./image/menu.png)','background-repeat' : 'no-repeat', 'background-position':'center center','background-size':'cover', 'width': '46px','height':'46px'});
+                $('#q_nu').css({'color':'#fff'}).fadeIn();
+                $('.popup-btn').css({'opacity':'1','cursor': 'Pointer','font-size':'16px','text-indent': ''});
+                $('.position>span').html('스토리신청 > 키워드 선택 > <span id="p">에피소드 입력</span>');
+                break;
+                case 4:
+                $('.popup-btn').css({'opacity':'0', 'cursor': 'Default','font-size':'0','text-indent': '-9999px'});
+                $('#rogo img').attr('src','./image/rogo_w.png');
+                $('#line').css({'background-color':'#fff'});
+                $('#q_ck').text('04');
+                $('.dot-nav').fadeIn();
+                $('#rogo').css({'color':'#fff'});
+                $('.position').css({'color':'#fff'});
+                $('.position>span').css({'color':'#fff'});
+                $('.dot-nav>ul>li>span').removeClass('pink_back');
+                $('.dot-nav>ul>li>span').removeClass('pink_back_sele');
+                $('#episode>li>span').removeClass('pink_border');
+                $('#episode>li>span').removeClass('pink_border_sele');
+                $('#menu').css({'background':'url(./image/menu.png)','background-repeat' : 'no-repeat', 'background-position':'center center','background-size':'cover', 'width': '46px','height':'46px'});
+                $('#q_nu').css({'color':'#fff'}).fadeIn();
+                $('.position>span').html('스토리신청 > <span id="p">일러스트로 나올 객체</span>');
+                break;
+                case 5:
+                $('.popup-btn').css({'opacity':'0', 'cursor': 'Default','font-size':'0','text-indent': '-9999px'});
+                $('#rogo img').attr('src','./image/rogo_w.png');
+                $('#line').css({'background-color':'#fff'});
+                $('#q_ck').text('05');
+                $('.dot-nav').fadeIn();
+                $('#q_nu').css({'color':'#fff'}).fadeIn();
+                $('#rogo').css({'color':'#fff'});
+                $('.position').css({'color':'#fff'});
+                $('.position>span').css({'color':'#fff'});
+                $('.dot-nav>ul>li>span').removeClass('pink_back');
+                $('.dot-nav>ul>li>span').removeClass('pink_back_sele');
+                $('#episode>li>span').removeClass('pink_border');
+                $('#episode>li>span').removeClass('pink_border_sele');
+                $('#menu').css({'background':'url(./image/menu.png)','background-repeat' : 'no-repeat', 'background-position':'center center','background-size':'cover', 'width': '46px','height':'46px'});
+                
+                
+                $('.position>span').html('스토리신청 > <span id="p">일러스트 실사의 정도</span>');
+                break;
+                case 6:
+                $('.popup-btn').css({'opacity':'0', 'cursor': 'Default','font-size':'0','text-indent': '-9999px'});
+                $('#rogo img').attr('src','./image/rogo_p.png');
+                $('#line').css({'background-color':'#f56d6f'});
+                $('#q_ck').text('06');
+                $('#q_nu').css({'color':'#f56d6f'}).fadeIn();
+                $('.dot-nav').fadeIn();
+                $('#rogo').css({'color':'#f56d6f'});
+                $('.position').css({'color':'#f57072'});
+                $('.position>span').css({'color':'#f57072'});
+                $('.dot-nav>ul>li>span').removeClass('pink_back');
+                $('.dot-nav>ul>li>span').removeClass('pink_back_sele');
+                $('#episode>li>span').removeClass('pink_border');
+                $('#episode>li>span').removeClass('pink_border_sele');
+                $('#menu').css({'background':'url(./image/menu.png)','background-repeat' : 'no-repeat', 'background-position':'center center','background-size':'cover', 'width': '46px','height':'46px'});                
+                
+                
+                $('.position>span').html('스토리신청 > <span id="p">메인컬러 선택</span>');
+                break;
+                case 7:
+                $('.popup-btn').css({'opacity':'0', 'cursor': 'Default','font-size':'0','text-indent': '-9999px'});
+                $('#rogo img').attr('src','./image/rogo_w.png');
+                $('#line').css({'background-color':'#fff'});
+                $('#q_ck').text('07');
+                $('.dot-nav').fadeIn();
+                $('#rogo').css({'color':'#fff'});
+                $('.position>span').css({'color':'#fff'});
+                
+                $('.dot-nav>ul>li>span').addClass('pink_back');
+                $('#episode>li>span').addClass('pink_border');
+                $('.dot-nav>ul>li>span.selected').removeClass('pink_back').addClass('pink_back_sele');
+                $('#episode>li>span.selected').removeClass('pink_border').addClass('pink_border_sele');
+                $('.position>span').html('스토리신청 > <span id="p">추가정보 입력</span>');
+                $('#menu').css({'background':'url(./image/menu_p.png)','background-repeat' : 'no-repeat', 'background-position':'center center','background-size':'cover', 'width': '46px','height':'46px'});
+                
+                $('#q_nu').css({'color':'#fff'}).hide();
+                break;
+                }
+        }
+        po_text();
+        var imgupDle = function(){
+                sel_files = [];
+                $(".imgs_wrap").empty();
+                $('#input_imgs').val('');
+        }
+        var see = 0;
+        $('.q1_btn_r').on('click',function(){
+                $('#imgup').show()
+        })
+        $('.q1_btn_l').on('click',function(){
+                $('#imgup').hide();
+        })
+        $('#menu').on('click',function(){
+            $('#menu_l').css({'right':0})
+        })
+        $('#menu_l_c').on('click',function(){
+            $('#menu_l').css({'right':-9999})
+        });
+
+        var Sprite = {
+        _isReverse:false,
+        _timer:0,
+        appInit:function(){
+            var _this = Sprite;
+            //this
+            //Sprite
+            _this.layout();
+            _this.reset();
+            _this.resetInit();
+        },
+        layout:function(){
+            this.$el = $('#ani_11');
+            this.$el3 = $('#ani_3');
+            this.$el4 = $('#ani_4');
+            this.$el7 = $('#ani_7');
+            this.$el8 = $('#ani_8');
+            this.$el5 = $('#ani_5');
+            this.$el6 = $('#ani_6');
+            this.$el9 = $('#ani_9');
+            this.$el10 = $('#ani_10');
+        },
+        reset:function(){
+            this._cuId = 60;
+            this._cuId6 = 84;
+            this._cuId9 = 104;
+            this._cuId3 = 48;
+            this._max = 61; //총 이미지 갯수
+            this._max6 = 85;
+            this._max9 = 105;
+            this._max3 = 49;
+            this._col = 7; //가로에 몇개?
+            this._row = 7; //세로로 몇줄?
+            this._maxW = 1008;
+            this._maxH = 1008;
+            this._width = this._maxW / this._col;//144 각 아이템들의 x좌표(base) 1008/7 = 144
+            this._height = this._maxH / this._row;//144 각 아이템들의 y좌표(base) 1008/7 = 144
+
+            this.update();
+        },
+        resetInit:function(){
+            var _this = Sprite;
+            //이벤트 추가.
+            this.$el.on('click', function(e){
+                e.preventDefault();
+                //this.play();//실행안됨
+                _this._cuId = 0;
+                _this.play();
+                })
+                this.$el7.on('click', function(e){
+                e.preventDefault();
+                //this.play();//실행안됨
+                _this._cuId = 0;
+                _this.play();
+                })
+                this.$el5.on('click', function(e){
+                e.preventDefault();
+                //this.play();//실행안됨
+                _this._cuId = 0;
+                _this.play();
+                })
+                this.$el10.on('click', function(e){
+                e.preventDefault();
+                //this.play();//실행안됨
+                _this._cuId = 0;
+                _this.play();
+                })
+                this.$el4.on('click', function(e){
+                e.preventDefault();
+                //this.play();//실행안됨
+                _this._cuId = 0;
+                _this.play();
+                })
+                this.$el6.on('click', function(e){
+                e.preventDefault();
+                //this.play();//실행안됨
+                _this._cuId6 = 0;
+                _this.play2();
+                })
+                this.$el9.on('click', function(e){
+                e.preventDefault();
+                //this.play();//실행안됨
+                _this._cuId9 = 0;
+                _this.play3();
+                })
+                this.$el3.on('click', function(e){
+                e.preventDefault();
+                //this.play();//실행안됨
+                _this._cuId3 = 0;
+                _this.play4();
+                })
+                this.$el8.on('click', function(e){
+                e.preventDefault();
+                //this.play();//실행안됨
+                _this._cuId3 = 0;
+                _this.play4();
+                })
+                
+        },
+        play:function(){
+            var _this = Sprite;
+            clearInterval(_this._timer);//setInterval.setTimeout 시간을 필요로하는 메소드를 정지,삭제(리셋)
+            _this._timer = setInterval(_this.progress, 60);
+
+        },
+        play2:function(){
+            var _this = Sprite;
+            clearInterval(_this._timer);//setInterval.setTimeout 시간을 필요로하는 메소드를 정지,삭제(리셋)
+            _this._timer = setInterval(_this.progress2, 60);
+
+        },
+        play3:function(){
+            var _this = Sprite;
+            clearInterval(_this._timer);//setInterval.setTimeout 시간을 필요로하는 메소드를 정지,삭제(리셋)
+            _this._timer = setInterval(_this.progress3, 60);
+
+        },
+        play4:function(){
+            var _this = Sprite;
+            clearInterval(_this._timer);//setInterval.setTimeout 시간을 필요로하는 메소드를 정지,삭제(리셋)
+            _this._timer = setInterval(_this.progress4, 60);
+
+        },
+
+
+        stop:function(){
+            var _this = Sprite
+            clearInterval(_this._timer);
+        },
+        progress:function(){
+            var _this = Sprite;
+            if(!_this._isReverse){
+                //순방향.
+                _this._cuId++; //0->1, 1->2.. progress실행될때 마다
+            }else{
+                //역방향.     
+                _this._cuId--; //48->47, 47->46 ..           
+            }
+            if(_this._cuId < 0){
+                _this._cuId = 0;
+            }
+            if(_this._cuId >= _this._max - 1){
+                _this._cuId = _this._max - 1;
+            }
+            //현재의 프레임 번호를 설정.
+            _this.update();
+            
+        }, progress2:function(){
+            var _this = Sprite;
+            if(!_this._isReverse){
+                //순방향.
+                _this._cuId6++; //0->1, 1->2.. progress실행될때 마다
+            }else{
+                //역방향.     
+                _this._cuId6--; //48->47, 47->46 ..           
+            }
+            if(_this._cuId6 < 0){
+                _this._cuId6 = 0;
+            }
+            if(_this._cuId6 >= _this._max6 - 1){
+                _this._cuId6 = _this._max6 - 1;
+            }
+            //현재의 프레임 번호를 설정.
+            _this.update();
+            
+        },
+        progress3:function(){
+            var _this = Sprite;
+            if(!_this._isReverse){
+                //순방향.
+                _this._cuId9++; //0->1, 1->2.. progress실행될때 마다
+            }else{
+                //역방향.     
+                _this._cuId9--; //48->47, 47->46 ..           
+            }
+            if(_this._cuId9 < 0){
+                _this._cuId9 = 0;
+            }
+            if(_this._cuId9 >= _this._max9 - 1){
+                _this._cuId9 = _this._max9 - 1;
+            }
+            //현재의 프레임 번호를 설정.
+            _this.update();
+            
+        },
+        progress4:function(){
+            var _this = Sprite;
+            if(!_this._isReverse){
+                //순방향.
+                _this._cuId3++; //0->1, 1->2.. progress실행될때 마다
+            }else{
+                //역방향.     
+                _this._cuId3--; //48->47, 47->46 ..           
+            }
+            if(_this._cuId3 < 0){
+                _this._cuId3 = 0;
+            }
+            if(_this._cuId3 >= _this._max3 - 1){
+                _this._cuId3 = _this._max3 - 1;
+            }
+            //현재의 프레임 번호를 설정.
+            _this.update();
+            
+        },
+        update:function(){
+            var _this = Sprite, x, y;
+
+            _this.$el.attr('src', './image/ani/q11_l_' + _this._cuId + '.png')
+            _this.$el7.attr('src', './image/ani/q7_l_' + _this._cuId + '.png')
+            _this.$el4.attr('src', './image/ani/q4_l_' + _this._cuId + '.png')
+            _this.$el5.attr('src', './image/ani/q5_l_' + _this._cuId + '.png')
+            _this.$el10.attr('src', './image/ani/q10_l_' + _this._cuId + '.png')
+            _this.$el6.attr('src', './image/ani/q6_l_' + _this._cuId6 + '.png')
+            _this.$el9.attr('src', './image/ani/q9_l_' + _this._cuId9 + '.png')
+            _this.$el3.attr('src', './image/ani/q3_l_' + _this._cuId3 + '.png')
+            _this.$el8.attr('src', './image/ani/q8_l_' + _this._cuId3 + '.png')
+
+        }
+    };
+    Sprite.appInit();
+    Sprite.play();
+    Sprite.play2();
+    Sprite.play3();
+    Sprite.play4();
+}());
+
+})(jQuery);
+</script>
+</body>
+</html>

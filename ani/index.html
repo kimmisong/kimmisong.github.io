@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/css.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <title>놀이터</title>
+</head>
+<body>
+    <section id="index">
+        <h1>소소한<br>놀이터</h1>
+    </section>
+    <section id="f1">
+        <div class="help none act">
+            <h1>나의소원은통일</h1>
+            <p>아래 도형 중 색이 다른 도형을 클릭하여 색을 바꿔보세요.</p>
+        </div>        
+        <div class="article none">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </section>
+    <section id="f2">
+        <div class="help">
+            <h1>동그라미세상</h1>
+            <p>모든 도형을 동그랗게!</p>
+        </div>    
+        <div class="article">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </section>
+    <section id="f3">
+        <div class="help">
+            <h1>나와라얍</h1>
+            <p>클릭,클릭,클릭 그리고 클릭</p>
+        </div>
+        <div class="article">
+
+        </div>
+    </section>
+<script>
+    (function($){
+        $('#f1,#f2,#f3').hide();
+            $(document).ready(function(){
+                $('#index>h1').on('click',function(){
+                    $('#f1').css({'z-index':'-1'})
+                    $('#f1').fadeIn();
+                    $('#index').css({'position':'fixed'});
+                    $('#index').stop().animate({'top':'-999px'},1000,function(){
+                        $('#f1').css({'z-index':'1'});
+                        $('#f1 .help').removeClass('none');
+                        $('#f1, #f1 .help').addClass('helv');
+                    })
+                    $('#f1 .act').animate({'opacity':'1'},2000);               
+                });
+                $('#f1 .act').on('click',function(){
+                    $('#f1 .article').removeClass('none');
+                    $('#f1 .help').removeClass('act');
+                });
+                var a = $('#f1 .article').innerHeight();
+                console.log(a);
+                
+            });   
+    })(jQuery);
+</script>
+</body>
+</html>

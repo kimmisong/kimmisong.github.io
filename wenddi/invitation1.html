@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/invitation.css"/>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <title>청첩장예시_1</title>
+</head>
+<body>
+    <section id="explanation">
+        <img src="./image/i0.png">
+    </section>
+    <section id="i0" class="index">
+        <h1>We are getting  Married</h1>
+        <p class="p">강신랑 ♥ 임신부<br>
+            2017. 11. 17<br>
+            /<br>
+            Sat 15:00<br>
+            <span class="nanum">계원 예술 대학교<br> 디자인관 5층</span></p>
+    </section>
+    <section class="inrto">
+        <article id="travel">
+            <img src="./image/i1_i.png" alt="">
+            <h1 class="italic">01.여행</h1>
+        </article>
+    </section>
+    <section id="travel_a">
+            <article id="travel_l">
+                <h1>Travel</h1>
+                <img src="./image/i1_2.png" alt="">
+                <h2>2017.09.02 차 타고 가평 가다.</h2>
+                <p>숙소를 알아보고 장도 보고 물놀이도 하고 바비큐도 구워 먹으면서 
+                        잠깐 결혼 한 것 같은 기분이 들었던 여행이었다.<br>
+                        무엇보다 우리의 첫 여행이라 아직도 그때가 생생하다.</p>
+            </article>
+            <article id="travel_r">
+            </article>
+        </section>
+        <section class="inrto">
+            <article id="Fall">
+                <img src="./image/i1_3.png" alt="">
+                <h1 class="italic">02.반하다</h1>
+            </article>
+        </section>
+        <section id="Fall_a">
+                <article id="Fall_l">
+                </article>
+                <article id="Fall_r">
+                    <h1>Fall in love</h1>
+                    <img src="./image/i1_3_r.png" alt="">
+                    <h2>항상 좋아할 수밖에 없었던 그.</h2>
+                    <p>항상 나를 집까지 안전하게 데려다준 듬직한 남편<br>
+                            사귀기 전부터 지금까지 단 한 번도 혼자 
+                            가게 두지 않는 남편 내가 반할 수밖에 없던 이유이다.</p>
+                </article>
+        </section>
+        <section class="inrto">
+            <article id="Meter">
+                <img src="./image/i1_4.png" alt="">
+                <h1 class="italic">03. 결혼을 결심한 계기</h1>
+            </article>
+        </section>
+        <section id="Meter_a">
+            <article id="Meter_l">
+                <h1>Meter</h1>
+                <img src="./image/i1_4_l.png" alt="">
+                <h2>항상 다정한 그.</h2>
+                <p>밥을 먹으러 식당에 갔는데
+                싸우게 됐다.<br> 그런데 화를 내고 속상해 하면서도 물을 떠다 주는 그 모습이 다정하여 결혼을 결심했다.
+                </p>
+            </article>
+            <article id="Meter_r">
+                </article>
+        </section>
+        <section id="end">
+                <h1> The happiest wedding</h1>
+        </section>
+        <section>
+            <article id="Bless">
+                <h1>Bless me</h1>
+                <img src="./image/i1_6.png" alt="">
+                <p><span>/</span><br>하나의 인연으로 두 마음이 한마음이 되었습니다.<br>
+                        서로 존중하고 진실한 모습으로<br>
+                        사랑을 키워나갈 수 있도록<br>
+                        부디 귀한 시간을 내주시어<br>
+                        저희의 새로운 출발을 축복해 주시기 바랍니다.</p>
+                    </article>
+            </section>
+            <section id="end_2">
+                    <img src="./image/i6.jpg" alt="">
+            </section> 
+            <section id="end_2">
+                    <img src="./image/i7.png" alt="">
+            </section> 
+            <section id="end_2">
+                    <img src="./image/i8.png" alt="">
+            </section> 
+            <section>
+                <article class="finish">
+                    <h1>LOVE</h1>
+                    <div id="box">
+                    <img src="./image/i1_7.png" alt="">
+                    <p>강신랑 ♥ 임신부<br>
+                        <span>2017. 11. 17<br>
+                        /<br>
+                        Sat 15:00<br></span>
+                        계원 예술 대학교<br> 디자인관 5층</p>
+                    </div>
+                </article>
+            </section>
+            <section id="page">
+                <div id="prev"></div>
+                <div id="next"></div>
+            </section>
+    <script>
+         $('body').css({'overflow':'hidden'});
+        $('section').hide();
+        $('#prev').css({'visibility':'hidden'});
+        $('#i0').fadeIn(1500,function(){
+            $('#page').show(function(){
+                $('#explanation').show();
+            });
+        });
+        $('#explanation').on('click',function(){
+            $('#explanation').addClass('end')
+        });
+        (function($){
+            var i = 1;
+
+            $('#next').on('click.nex',function(){
+                $('section').eq(i).fadeOut();
+                i++
+                $('section').eq(i).fadeIn();
+                $('#prev').css({'visibility':'visible'})
+                if(i == 12){
+                    i = 12;
+                    $('#next').css({'visibility':'hidden'});
+                }
+            });
+            $('#prev').on('click.pre',function(){
+                $('section').eq(i).fadeOut();
+                i--
+                $('section').eq(i).fadeIn();
+                $('#next').css({'visibility':'visible'})
+                if(i == 1){
+                    i = 1;
+                    $('#prev').css({'visibility':'hidden'});
+                }
+            })
+
+     
+
+})(jQuery);
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@font-face{
+    font-family:'Midnight Valentine';
+    src:url('../font/Midnight Valentine.eot');
+    src:local(※), 
+    url('../font/Midnight-Valentine.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css');
+@font-face{
+    font-family:'Avenir';
+    src:url('../font/Avenir.eot');
+}
+html,body{
+    height: 100%;font-family: 'Nanum Barun Gothic', sans-serif;box-sizing: border-box;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis:50%;
+    height: 100%;
+    flex-direction:column;text-align: center;
+}
+header>span{font-size: 13px;font-family:'Nanum Barun Gothic';display: fixed;left: 110px;top:15px;}
+#in1, #in3{background-color: #f56c6e;color: #fff;}
+#in1 h1{font-size: 2rem;margin-bottom: 1rem;}
+#in1 p{line-height: 4rem;}
+.wenddi{
+    font-family: 'Midnight Valentine';
+    font-size: 5rem;
+    font-weight: 200;
+    margin-top: 10px;
+}
+#in1>img{margin-top: 30px;}
+.next{position: absolute;bottom: 5vh;}
+#in2 span{color: #f56c6e;}
+#in2 span:nth-child(1){font-size: 10rem;}
+#in2 img{margin: 30px 0; width: 6vw;}
+#in2 p{color: #999999;margin-top: 30px;line-height: 30px;}
+
+#in3{position: relative;}
+#in3:nth-child(1){display: flex; flex-direction:column;}
+#in3 button{background-color:#f56c6e;border:1px solid #fff;color:#fff;font-family:'Avenir';padding: 20px;margin: 0 20px 50px;outline: none;width: 10vw;}
+#in3 button:active{
+    background-color:#f56d6f;color: #fff;font-family:'Avenir';padding: 20px; outline: none;
+}
+.active{ background-color:#fff !important;color: #f56c6e !important;font-family:'Avenir';padding: 20px; }
+#in3 p{margin-top: 30px;line-height: 40px;}
+#ABOUT_a{position: relative; width: 100%; height: 200px;}
+#in3 #ABOUT_a .wenddi{font-size: 2rem;}
+#ABOUT_a .bot{position: absolute; bottom: 0;width: 100%;left: 0;}
+#ch2 #ABOUT_a ul{display: flex;margin-top: 30px;width: 100%;}
+#ch2 #ABOUT_a ul li{width: 15vw;font-weight: 600;word-break: keep-all;}
+#ch2 #ABOUT_a ul li:nth-child(2){margin: 0 30px;}
+#ch2 #ABOUT_a ul li span{font-size: 0.8rem;padding-top: 50px;line-height: 30px;height: 10vh;display: block;font-weight: 400;}
+#p_but{position: absolute;left: 10vw;bottom:40%;cursor: pointer;width: 4vw;}
+#n_but{position: absolute; right: 10vw;bottom:40%;cursor: pointer;width: 4vw;}
+

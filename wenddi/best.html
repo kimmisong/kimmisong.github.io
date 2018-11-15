@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/best.css"/>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <title>Wenddi BEST</title>
+</head>
+<body>
+        <header>
+                <a href="./index.html">W</a>
+                <span>Wenddi BEST 후기구경</span>
+                <div id="menu">menu</div>
+            </header>
+            <div id="menu_l">
+               <ul id="top">
+                   <a><li><img src="./image/menu_c.png" id="menu_l_c"></li></a>
+                   <a href="./login.html"><li>로그인</li></a>
+                   <a><li>마이페이지</li></a>
+                   <a><li>FAQ</li></a>
+               </ul>
+               <div id="middle">
+                   <div id="login">
+                        <img src="./image/menu_use.png" alt="">
+                        <p>홍길동님 안녕하세요.<br>오늘도 즐거운 하루되세요 :)</p>
+                   </div>
+                    <ul id="a">
+                   <a href="./introduction.html"><li>Wenddi 소개</li></a>
+                   <a href="./story.html"><li>스토리 신청하기</li></a>
+                   <a><li>BEST</li></a>
+                       <ul id="in">
+                            <a href="./review.html"><li>- 후기 등록하기</li></a>
+                            <a><li>- 후기 구경하기</li></a>
+                       </ul>
+               </ul>
+            </div>
+            </div>
+    <section>
+        <h1>WENDDI BEST</h1>
+        <hr>
+        <h2>A popular invitation card</h2>
+        <hr class="short">
+        <div class="row">
+        <div class="raw">
+            <img src="./image/b_1.png" alt="" id="pointer">
+            <a href="./invitation1.html" target="_blank"><img src="./image/m4_r1.jpg" alt=""></a>
+            <div class="text">
+                강 신랑, 임 신부 님<br>
+                <span># 언제나 너와 함께</span>
+            </div>
+        </div>
+        <div class="raw">
+                <img src="./image/b_2.png" alt="" id="pointer">
+                <a href="./invitation2.html" target="_blank"><img src="./image/m4_r2.jpg" alt=""></a>
+                <div class="text">
+                    김 주하, 신 윤지 님<br>
+                    <span># 누구보다 듬직한 남편</span>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+        (function($){
+            $('#menu').on('click',function(){
+                $('#menu_l').css({'right':0})
+            })
+            $('#menu_l_c').on('click',function(){
+                $('#menu_l').css({'right':-9999})
+            })
+   
+            
+        })(jQuery);
+    </script>
+
+</body>
+</html>

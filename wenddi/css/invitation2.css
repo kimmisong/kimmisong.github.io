@@ -1,0 +1,82 @@
+@font-face{
+    src:url('../font/Midnight Valentine.eot');
+}
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css');
+@font-face{
+    src:url('../font/Avenir.eot');
+}
+@font-face{
+    font-family:'Golden Plains';
+    src:url('../font/Golden Plains.eot');
+    src:local(※), 
+        url('../font/Golden-Plains.woff') format('woff');
+}
+html,body{
+    height: 100%;font-family: 'Nanum Barun Gothic', sans-serif;box-sizing: border-box;
+    font-family: 'Sandoll Jebi',serif ,'궁서'
+}
+ul{list-style:none;}
+.index img{height: 100%; padding-bottom: 50px}
+.index>h1{font-family:'Golden Plains';
+    font-size: 0;color: transparent;
+    text-indent: -9999px;
+    background-image: url('../image/i1_1_t.png');
+    text-align: center;background-position: center; width: 100%;height: 30vh;z-index: 3;background-repeat: no-repeat;position: absolute;top: 0;background-size: 600px;
+    }
+.index p{position: absolute;left: 40px; bottom: 40px; font-size: 1.2rem;line-height:2rem; font-family: serif;color: #525252;font-style: italic;font-weight: 900;
+}
+.nanum{font-family:'Nanum Barun Gothic', sans-serif;font-weight: 900;font-style: normal;font-size: 1rem;
+}
+article{width: 50%;height: 100vh;
+}
+#travel, #Fall, #Meter{display: flex;justify-content: center;align-items: center;flex-flow: column;text-align: center;width: 100%;height: 100%;
+}
+#travel img{width: 20vw;
+}
+#Fall img{margin-left: 40px;}
+#italic{position: absolute;left: 40px; bottom: 40px; font-size: 1.2rem;line-height:2rem; font-family: serif;font-style: italic;font-weight: 900; margin-top: 30px;
+}
+#travel_l, #Fall_r, #Meter_l, #Bless{display: flex;justify-content: center;align-items: center;flex-flow: column;
+}
+#travel_l>h1, #Fall_r>h1, #Meter_l>h1, #Bless>h1{font-family:'Golden Plains';font-size: 100px; color: #e5bda1;font-weight: 200;margin-bottom: 30px;
+}
+#travel_l img{margin:40px 0;margin-left: -50px;
+}
+#Fall_r img, #Meter_l img, #Bless img{margin:40px 0;
+}
+#travel_l p, #Fall_r p, #Meter_l p, #Bless p{width: 25vw;line-height: 40px;font-size: 13px; word-break:keep-all;text-align: center;margin-top:30px;
+}
+#travel_r{background-image:url('../image/i2_2_r.png');width: 50%; background-position: right;background-repeat: no-repeat;
+}
+#Fall_l{background-image:url('../image/I2_4_l.jpg');width: 50%; background-position: center;background-repeat: no-repeat;background-size: cover;}
+#Fall_lo{background-image:url('../image/I2_5_l.jpg');width: 50%; background-position: center;background-size: cover;background-repeat: no-repeat}
+#Meter_r{background-image:url('../image/i2_4_r.png');width: 50%; background-position: center;background-size: cover;background-repeat: no-repeat
+}
+#end{height: 100%;display: flex;justify-content: flex-end;}
+#end img{height: 100%;
+}
+#end_1{background-image:url('../image/I2_7.jpg'); background-repeat: no-repeat;background-position: center;height: 100%;background-size: cover;}
+#end_2{height: 100%;display: flex;justify-content:center;align-items: center;background-color: #e5bda1}
+#end_2 img{width:600px;}
+#end_3{height: 100%;display: flex;justify-content:center;align-items: center;background-color: #e5bda1}
+#end_3 img{width:100%;}
+#end h1{font-family:'Golden Plains';
+    font-size: 100px; color: #e5bda1;font-weight: 200;margin-top: 20px;
+}
+#Bless img{margin:40px 0 10px;}
+#Bless>h1{font-size:50px; }
+#Bless p>span{margin-bottom: 30px;}
+.finish{background-color: #e5bda1;width: 100%; height: 100vh;display: flex;justify-content: center;align-items: center;flex-flow: column;}
+.finish h1{font-family:'Golden Plains';font-size: 300px; color: #ffffff; margin-top: 20vh; font-weight: 300;}
+.finish #box{position: relative;z-index: 2;    top: -45vh;}
+#box p{position: absolute;top: 50vh; left: 20px;text-align: center;line-height: 30px;color: #fff;font-size: 1.2rem;font-family:'Noto Serif', serif;font-style: italic;font-weight: 600}
+#box p span{font-weight: 900}
+#page{height: 100%;width: 100%;background-color: transparent;border: 1px solid transparent; position: fixed; top:0; left: 0;display: flex;flex-direction: column;}
+#prev{height: 50vh;width: 100%; background-color: transparent;border: 1px solid transparent;}
+#next{height: 50vh;width: 100%; background-color: transparent;border: 1px solid transparent;
+
+}
+#explanation{position:absolute;width: 100%;height: 100%;z-index: 99}
+#explanation img{width: 100%;height: 100%;background-position: center center;background-repeat: no-repeat;}
+.end{display: none}

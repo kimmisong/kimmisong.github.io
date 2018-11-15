@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Hi+Melody');
+@import url('https://fonts.googleapis.com/css?family=Hi+Melody|Jua');
+nav,section{letter-spacing: 2px}
+nav{position: fixed;bottom: 5%;width: 100vw;height: 10%}
+nav ul{display: flex;justify-content: center;align-items: center;height: 100%;background-color: #ec1c79;color: #fff}
+nav ul li{border-right: 2px solid #fff}
+nav ul li:nth-child(6),nav ul li:nth-child(1){border-right:0px;}
+#nb_main{width: 35px;margin-bottom:10px}
+.nav_b1{background: url("./image/nav_b1.png") no-repeat;background-size: 50px;padding: 40px 0}
+.nav_b2{background: url("./image/nav_b2.png") no-repeat;background-size: 50px;padding: 40px 0}
+.nav_b3{background: url("./image/nav_b3.png") no-repeat;background-size: 50px;padding: 40px 0}
+.nav_b4{background: url("./image/nav_b4.png") no-repeat;background-size: 50px;padding: 40px 0}
+.nav_b5{background: url("./image/nav_b5.png") no-repeat;background-size: 50px;padding: 40px 0}
+nav ul li a{color: #fff;width: 100%;width: 100%;padding:5px 20px}
+nav ul li a:not(.heddin):hover{background-color: #fad804;font-weight: bolder;color:#000;}
+
+footer{position: fixed;bottom: 0;display: flex;justify-content: space-between;align-items: center;background-color: #000;color: rgb(150, 150, 150);height: 5%;width: 100vw;padding: 0 10px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 12px}
+footer div{width: 100px}
+footer div ul{display: flex;flex-direction: row}
+footer div ul a:nth-child(1){background: url("./image/sns.png") no-repeat;width: 20px;height: 20px;}
+footer div ul a:nth-child(2){background: url("./image/sns.png") no-repeat;width: 21px;height: 20px; background-position: -23px;margin: 0 5px}
+footer div ul a:nth-child(3){background: url("./image/sns.png") no-repeat;width: 20px;height: 20px;background-position: -71px}
+
+section{background: url("./image/bc.png") repeat-x, url("./image/bc_b.png") repeat-x; background-position: top, bottom;height: 85vh;}
+.heddin,footer div ul li{font-size: 0;color: transparent;text-indent: -9999px;}
+section p{display:flex;justify-content: center;align-items: center;font-size: 30px}
+.center_h{display:flex;flex-direction: column;    justify-content: center;align-items: center;height: 100%;}
+.center_h span{font-size: 60px;}
+
+/* 고구마깡? */
+.location{position: fixed; top:10%;left: 10%;text-align: left;}
+.location h2{font-size:30px;}
+.location h1{font-size:50px;}
+.center_r{display:flex;justify-content: center;align-items: center;height: 100%}
+.center_r img{margin-right: 5%;height: 35vh}
+#ingredients{text-align: center}
+#ingredients span{font-size: 20px;font-weight: bold}
+#ingredients .center_r div:nth-child(1n){background-color: #f4bed5;}
+#ingredients .center_r div:nth-child(2n){background-color: #ffeaa5;}
+#ingredients .center_r div{padding: 30px 10px;margin: 15px 5px; width: 80px;height: 100%;border-radius:10px}
+#ingredients .center_r div img{width: 40px;height: 50px;margin:0 auto 30px;}
+.nav_sub{position: fixed;bottom: 21%;width: 100vw}
+.nav_sub ul li{cursor: pointer;}
+.nav_sub ul li:nth-child(1){margin-right: 10px;padding-right: 10px;border-right: 1px solid #000}
+
+#m2{display: none;font-size: 20px}
+#m2 div span{text-align: right; font-size: 12px}
+#m2 td{padding: 10px;text-align: center}
+#m2 tr:nth-child(1){border-bottom: 2px solid #000}
+td:nth-child(2n){background-color:#ffeaa5 }
+td:nth-child(2n-1){background-color:#f4bed5}
+
+#m3 p{line-height: 35px}
+#m4{display: none;}
+#m4>.center_r>img:nth-child(2n-1),#event>.center_r>img:nth-child(2n-1){width: 18px;height: 31px;padding: 0 5%;margin: 0;cursor: pointer}
+#goods_wrap,#event_wrap{text-align: center}
+#goods_wrap>img{padding-bottom: 10px;width: 400px; height: 300px}
+
+#history div{text-align: center;margin: 0 20px}
+#history div img{margin: 0}
+#history div:nth-child(1) img{width:90px;height: 113px}
+#history div:nth-child(2) img{width:97px;height: 136px}
+#history div:nth-child(3) img{width:97px;height: 136px}
+#history div:nth-child(4) img{width:131px;height: 180px;}
+#history div:nth-child(5) img{width:171px;height: 220px}
+.deco{background-color: #ffeaa5; width: 100vw; height: 10vh;position: fixed;left: 0;top:37%;z-index:-1}
+
+#event #event_img{width: 100%;height:auto;}
+#event #event_text{line-height: 17px}
+
+#related{text-align: center;}
+#related>div>div>a:link,#related>div>div>a:visited{color: #000}
+#related>div>div>a:hover{color:#ec1c79}
+#related img {margin-bottom: 5px; width:90%;height: auto}
+
+@media (max-width:767px){
+   .location>h2{font-size: 20px}
+   .location>h1{font-size: 25px} 
+   #index img{width: 50%;height: auto}
+   #index p{flex-direction: column; }
+}

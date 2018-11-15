@@ -12,7 +12,6 @@ var init = function(){
   var hour = document.getElementById('hour');
   var min = document.getElementById('min');
   var sec = document.getElementById('sec');
-  var ampm = document.getElementById('ampm');
 
   var watch = function() {
     var newTime = new Date();

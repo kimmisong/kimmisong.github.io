@@ -1,0 +1,792 @@
+
+@font-face{
+    font-family:'Midnight Valentine';
+    src:url('../font/Midnight Valentine.eot');
+    src:local(※), 
+    url('../font/Midnight-Valentine.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css');
+@font-face{
+    font-family:'Avenir';
+    src:url('../font/Avenir.eot');
+}
+html,body{
+    height: 100%;font-family: 'Nanum Barun Gothic', sans-serif;
+}
+ul{list-style:none;}
+header{
+    position: fixed;
+    left: 45px;
+    top: 10px;
+    font-size: 80px;
+    font-family: 'Midnight Valentine';
+    z-index: 999;    
+}
+header>a{
+    color: #7eccbe;
+}
+header>a:link, a:visited, a:hover{
+    color: #7eccbe;
+    text-decoration:none;
+}
+#rogo img{width: 70px;}
+#menu{
+    background:url(../image/menu.png);background-size:cover;
+    font-size: 0;
+    color: transparent;
+    text-indent: -9999px;
+    position: fixed;
+    right: 25px;
+    top:30px;
+    width: 46px;
+    height: 45px;}
+.position{
+    position: fixed;
+    left: 110px;
+    top:15px;
+}
+.position>span{
+    font-size: 10px;
+    color:#7eccbe;;    
+}
+.position #p{
+    font-size: 13px;
+}
+
+
+.dot-nav{position:absolute;z-index:50;right: 45px;;top:15%;}
+.dot-nav ul{display:block;text-align:center}
+.dot-nav li{padding-top:7px;padding-bottom:7px}
+.dot-nav>ul>li>span{display:block;width:8px;height:8px;background-color:rgba(255, 255, 255, 0.582);border-radius:50%;line-height:8px;cursor:pointer;user-select:none;}
+.dot-nav>ul>li>span:hover{background-color:rgba(255, 255, 255, 0.589)}
+.dot-nav>ul>li>span.selected{background-color:#fff;cursor:default}
+#episode>li>span{width:10px; height: 1px;border-bottom: 2px solid rgba(255, 255, 255, 0.527);cursor:pointer;user-select:none;}
+#episode>li>span:hover{border-bottom: 2px solid rgba(255, 255, 255, 0.5);}
+#episode>li>span.selected{border-bottom: 2px solid #fff;;cursor:default}
+.pink_back_sele{background-color: rgba(255,0,0,0.5) !important;}
+.pink_border_sele{border-color: rgba(255,0,0,0.5) !important;}
+.pink_back{background-color: #fdbec0 !important;}
+.pink_border{border-color: #fdbec0 !important;}
+
+/* 스토리분석 시작화면 */
+section{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+color: #b3b3b3;
+}
+section article{
+width: 50vw;
+height: 100%;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction : column;
+}
+#q_index article h2{
+    color: #7eccbe;
+    font-size: 38px;
+}
+#q_index article h3{
+    color: #a0a0a0;
+    font-family: 'Noto Serif', serif;
+    margin: 34px 0 60px;
+    font-style: italic;
+    
+}
+#q_index article .row{
+    display: flex;
+    align-items:center;
+    text-align: center;
+    line-height: 20px;
+}
+#q_index article .row ul li img{
+    height: 93px;
+}
+#q_index article .row ul li:nth-child(2){
+color: #7eccbe;
+margin: 40px 0;
+font-weight: 900;
+}
+#q_index article .row ul li:nth-child(3){
+    font-size: 13px;
+    width: 12vw;
+    word-break: keep-all;
+    height: 60px;
+}
+#q_intro_r{
+    background-color: #7eccbe;
+}
+#q_intro_r #qi_r img{width: 100%}
+#q_intro_r .btn{
+    display:inline-block;
+    /* width: 220px;
+    height: 60px; */
+    padding: 24px 84px;
+    margin-top:70px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.triangle {
+    position: absolute;    
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 45px solid #fff;
+    z-index: 5;
+}
+#qi_l,#qi_r{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction : column;
+}
+/* 질문1 페이지 */
+#q_1_l, #q_1_r{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction : column;
+}
+.figure_no{
+    background-image: url('');
+    width: 355px;
+    height: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+#q_1_r .figure{
+margin: 0;
+padding: 20px;
+margin-bottom: 40px;
+}
+.figure{
+    background-image: url('../image/q_bac_de.png');
+    background-size:cover ;
+    width: 434px;
+    height: 434px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin-left: 100px;
+    padding: 50px;
+}
+#q_1_r .figure_no, #q_1_l .figure_no{
+    margin-bottom: 20%;
+    width: 355px;
+}
+.q1_btn_l{
+    color: #7eccbe !important;
+    cursor: pointer
+}
+.q1_btn_r,.q1_btn_r:hover, .q1_btn_r:visited {
+    color: #fff;
+    cursor: pointer
+}
+
+article{position:relative;height:100vh}
+article .figure{}
+article .text_q{position:absolute;bottom:110px;width: 100%;    left: 0;margin: 0 auto;}
+article .text_q span{display: block;cursor: pointer;text-align: center;}
+article .text_q span:nth-child(1){font-size: 2rem;margin-bottom: 10px;font-weight: 900;letter-spacing:2px;font-family: Avenir, sans-serif;}
+article .text_q span:nth-child(2){font-size: 0.9rem;}
+/* 질문2페이지 */
+#q_2{
+background-color: #aad1e6;
+color: #fff;
+display: flex;
+flex-direction : column;
+}
+#q_2_a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93%;
+}
+
+.q_2_r>.text>h2{font-family: 'Avenir', sans-serif;letter-spacing:2px;}
+.q_2_r>.text>h2, .text_s>h2{
+    font-size: 2rem;
+}
+.q_2_r>.text>span, .text_s>span{
+    display: block;
+    font-size: 0.9rem;
+    padding: 30px 0 81px;
+}
+.hide-checkbox + label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #fff;      
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    }     
+.hide-checkbox:checked + label {
+    display: block;
+    margin-bottom: 5px;
+    color: #85a9fb;    
+    }
+
+#q_nu{position:fixed;font-size: 30px;font-family: 'Noto Serif', serif;font-style: italic;left: 40px;
+    bottom: 40px; color: #fff;}
+#line{width: 2px;
+    height: 20px;
+    -webkit-transform:skew(-55deg);
+    -moz-transform:skew(-55deg);
+    -ms-transform:skew(-55deg);
+    -o-transform:skew(-55deg);
+    margin-left: 13px;
+    margin-top: 7px;
+    margin-bottom: -28px;
+    background-color: #fff;
+}
+    /* 공통 */
+.ti_s{
+    font-size: 1rem;
+}
+/* 질문5페이지(키워드_데이트) */
+#q_4, #q_5, #q_6, #q_7, #q_8, #q_9, #q_10, #q_11, #q_12, #q_13, #q_14{
+    background-color: #96c8e3;
+    color: #fff;
+    display: flex;
+    flex-direction : column;
+    }
+#q_4_a, #q_5_a, #q_6_a, #q_7_a, #q_8_a, #q_9_a, #q_10_a, #q_11_a, #q_12_a, #q_13_a, #q_14_a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93%;
+}
+.text_s{
+    text-align: left;
+}
+.text_s:nth-child(1){font-family: 'Avenir', sans-serif;}
+textarea {
+        width: 300px;
+        height: 80px;
+        margin: 20px 0;
+        background-color: #b3d6e9;
+        color: #fff;
+        border: transparent;
+        outline: none;
+        overflow:auto;
+}
+/* 질문3페이지(키워드_첫만남) */
+#q_3{
+    background-color: #f56c6e;
+    color: #fff;
+    display: flex;
+    flex-direction : column;
+}
+#q_3_a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93%;
+}
+.q_3_r span{
+    padding: 6% 0 8%;
+}
+#q_3 textarea {
+    background-color: #f67b7d;
+}
+.popup-btn{
+    position:fixed;
+    right: 150px;
+    bottom: 50px;
+    color: #fff !important;
+    padding: 5px;
+    text-align: center;
+}
+.imgs_wrap{
+    width:40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+    justify-content : center;
+    align-items : center;    
+    background-image: url(../image/img_bac.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.popup-wrap {
+width:100%;
+height:100%;
+display:none;
+position:absolute;
+top:0px;
+left:0px;
+content:'';
+background:rgba(0,0,0,0.85);
+z-index: 900;
+}
+.popup-wrap2 {
+    width:100%;
+    height:100%;
+    display:none;
+    position:absolute;
+    top:0px;
+    left:0px;
+    content:'';
+    background:rgba(0,0,0,0.85);
+    z-index: 900;
+    font-family: 'Nanum Barun Gothic', sans-serif;
+    }
+.close-btn2{
+    height: 50px;
+    display:inline-block;
+    position:absolute;
+    -webkit-transition:all ease 0.50s;
+    transition:all ease 0.75s;
+    font-weight:800;
+    text-decoration:none;
+    line-height:50px;
+    top: 0;
+    right: 0;
+    background-color: #ffa3a8 !important;
+    width: calc(100% - 20px);
+    text-align: right;
+    padding-right: 20px;
+    color: rgb(255, 5, 5) !important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 3rem;
+}
+.popup-box2 button{
+    background: #fff;
+    border-radius:10px;
+    border: 1px solid #fff;
+    box-shadow: 5px 5px 5px 0px lightgray;
+    font-size: 1.6rem;
+    margin:25px 15px 0; 
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    color: #555555;
+    outline: 0;
+    cursor: pointer;
+}
+
+.popup-box2{
+    width: 500px;
+    height: 200px;
+    padding: 80px 75px 30px;
+    transform:translate(-50%, -50%) scale(0.6);
+    position:absolute;
+    top:50%;
+    left:50%;
+    box-shadow:0px 2px 16px rgba(0,0,0,0.5);
+    border-radius:3px;
+    background:#fff;
+    text-align:center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    line-height:2;
+    color: #555555;
+}
+.popup-box2 span:nth-child(2){
+    font-size: 1.9rem;
+    font-weight: 600;
+    
+}
+.popup-box2 span:nth-child(3){
+    font-size: 0.8rem;
+    color: #8b8b8b;
+}
+
+.popup-box {
+width:40vw;
+padding:50px 75px;
+transform:translate(-50%, -50%) scale(0.5);
+position:absolute;
+top:50%;
+left:50%;
+box-shadow:0px 2px 16px rgba(0,0,0,0.5);
+border-radius:3px;
+background:#fff;
+text-align:center;
+}
+.close-btn {
+    width:60px;
+    height: 1rem;
+    padding: 5px;
+    display:inline-block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    -webkit-transition:all ease 0.50s;
+    transition:all ease 0.75s;
+    border-radius:30px;
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration:none;
+    color:rgb(0, 0, 0) !important;
+    font-size: 1rem;
+    line-height:1rem;
+}
+.transform-in, .transform-out {
+    display:block;
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+.transform-in {
+    -webkit-transform:translate(-50%, -50%) scale(1);
+    transform:translate(-50%, -50%) scale(1);
+}
+
+.transform-out {
+    -webkit-transform:translate(-50%, -50%) scale(0.5);
+    transform:translate(-50%, -50%) scale(0.5);
+}
+.input_wrap{margin-top: 30px;}
+.selProductFile{width:20vw; vertical-align: middle;}
+.input_wrap label{position: relative;cursor: pointer;display: inline-block;vertical-align: middle;overflow: hidden;width: 10vw;height: 30px;color: rgb(0, 0, 0);text-align: center;line-height: 30px;border-radius: 20px;border: 2px solid black;}
+.input_wrap label input{position: absolute;width: 0;height: 0;overflow: hidden;}
+.input_wrap input[type=text]{vertical-align: middle;display: inline-block;width: 20vw;text-align: center;height: 28px;line-height: 28px;font-size: 11px;padding: 0;border: 0;color: #5a5a5a;font-size: 15px;}    
+/* 질문4페이지(키워드_첫키스) */
+#q_4{
+    background-color: #403d64;
+    color: #fff;
+}
+#q_4 textarea {
+    background-color: #535174;
+} 
+/* 질문6페이지(키워드_여행) */
+#q_6{
+    background-color: #aad1e6;
+    color: #fff;
+}    
+/* 질문7페이지(키워드_기념일) */
+#q_7{
+    background-color: #fdbec0;
+    color: #fff;
+}
+#q_7 textarea {
+    background-color: #fdc5c6;
+}
+/* 질문8페이지(키워드_프로포즈) */
+#q_8{
+    background-color: #f56d6f;
+    color: #fff;
+}
+#q_8 textarea {
+    background-color: #f67c7e;
+}   
+/* 질문9페이지(키워드_위기/극복) */
+#q_9{
+    background-color: #3e3c62;
+    color: #fff;
+}
+#q_9 textarea {
+    background-color: #524a6d;
+    color: #fff;
+}
+/* 질문10페이지(키워드_반한점) */
+#q_10{
+    background-color: #ea8c91;
+    color: #fff;
+}
+#q_10 textarea {
+    background-color: #ec999c;
+    color: #fff;
+}
+/* 질문11페이지(키워드_결혼결심) */
+#q_11{
+    background-color: #468afa;
+    color: #fff;
+}
+#q_11 textarea {
+    background-color: #5996fb;
+    color: #fff;
+}
+/* 질문12페이지(객체선택) */
+#q_12{
+    background-color: #7eccbd;
+    color: #fff;
+}
+#q_12 .q_12_l .figure{background-image: url('');margin-left:0;    width: 100%;}
+#q_12 .q_12_l .figure form{
+    display: flex;
+    flex-direction : row;
+}
+#q_12 .q_12_l .figure form label{
+   display: flex;
+   flex-direction : column;
+   align-items:center;
+   text-align: center;
+   margin: 100px 20px 0;
+   width: 20em;
+   line-height:50px;
+}
+.q_12_l>span{font-size: 20px;}
+#q_12 .q_12_l .figure form label img{
+    height: 249px;
+    
+}
+#q_12 .q_12_l .figure form label .row{
+    margin-top:30px;
+}
+.input_text{
+    background-color: #8bd1c4;
+    padding: 10px;
+    margin: 5px 10px;
+    font-size:12px;
+    color: #fff;
+    border: 0px;
+}
+input[type="text"],input[type="textarea"] {
+    -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+    -moz-appearance: none;
+    appearance: none;
+}
+::-webkit-input-placeholder {color:#fff;}
+:-moz-placeholder {color:#fff;}
+::-moz-placeholder {color:#fff;}
+:-ms-input-placeholder {color:#fff;}
+
+/* 질문13페이지(실사정도) */
+#q_13{
+    background-color: #4f63b9;
+    color: #fff;
+}
+#q_13_a, #q_13 .q_13_l{
+    width: 100%;
+}
+/* #q_13 .q_13_l span{
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+} */
+#q_13 .q_13_l span:nth-child(1){
+    font-size: 20px;
+}
+#q_13 .q_13_l span:nth-child(2){
+    font-size: 0.8rem;
+    margin: 20px 0 40px;
+}
+.range-slider{
+    width: 100%;
+    margin-bottom: 30px;
+}
+ input.input-range {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    width: 60%;
+    height: 35px;
+    -webkit-border-radius: 40px;
+    -ms-border-radius: 0px;
+    /* background: #fff; */
+    outline: none;
+    margin-bottom: 30px;
+}
+/*Slider Handle */
+input.input-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #fc9795;
+      border: 9px solid #f56c6e;
+      cursor: pointer;
+      -webkit-transition: background .15s ease-in-out;
+      transition: background .15s ease-in-out;
+}
+ input.input-rang::-moz-range-thumb {
+    width:55px;
+    height: 55px;
+    border: 9px solid #f56c6e;
+    border-radius: 50%;
+    background: #fc9795;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+}
+/* 다른거 */
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 60px;
+    /* border-radius: 40px; */
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+    /*remove default tick marks*/
+    color: transparent;
+  }  
+  input[type=range]::-ms-fill-lower {
+    background: #fff;
+    height: 35px
+
+  }
+  
+  input[type=range]::-ms-fill-upper {
+    background: #fff;
+    height: 35px
+  }
+  
+  input[type=range]::-ms-thumb {
+    width:55px;
+    height: 55px;
+    border: 9px solid #f56c6e;
+    /* border-radius: 50%; */
+    background: #fc9795;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+  }
+
+  /* 끝 */
+#slider_img{   
+    height: 310px;
+}
+/* 질문14페이지(컬러선택) */
+#q_14{
+    background-color: #fff;
+}
+#q_14_a{
+    height: 100%;
+}
+#q_14 #q14_l{
+    color:#f56d6f;
+}
+#q_14 #q14_l .text_q span{
+    cursor: Default;
+}
+#q_14 #q14_r{
+    background-color: #f49095;
+    color: #fff;
+}
+#q14_l .figure{margin-left: 0;}
+#q14_l .figure img{width:25vw;}
+/* 색상환 */
+.color-picker {
+	display: inline-block;
+    position: relative;
+    margin-bottom: 5rem;
+}
+.color-picker input { display: none; }
+.canvas-wrapper {
+    border-radius: 1000px;
+	overflow: hidden;
+}
+.indicator {
+	top: calc(50% - 2rem);
+	left: 50%;
+	display: block;
+	position: absolute;
+	background-color: transparent;
+	transform: translate3d(-50%,-2rem,0);
+	pointer-events: none;
+}
+.indicator .selected-color {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 30%;
+	border-radius: 1000px;
+	z-index: -1;
+    background-color: #fff;
+    -webkit-filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5));
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5));
+}
+.next14{position:absolute;bottom:20px;left: 90%;}
+.next14 a{display: block;cursor: pointer;}
+/* 질문15페이지(추가정보) */
+#q_15 #q15_l .figure{background-image: url(''); margin-left: 0;}
+#q_15 #q15_l{
+    background-color: #fdbec0;
+}
+#t15_h{
+    position: absolute;    
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 45px solid #fdbec0;
+}
+#q_15 #q15_r{
+    color: #707070;
+}
+#q_15 #q15_r h2{
+color: #fdbec0;
+}
+#q_15 #q15_r span{
+    color: #fdbec0;
+    padding: 1rem 0 2rem;
+}
+#q_15 #q15_r .text_s input[type="text"]{
+    height: 2rem;
+    width: 85%;
+    background-color: #fff;
+    color: #707070;
+    border: 1px solid #707070;
+    margin: 1rem 0 2rem;
+}
+#q_15 #q15_r .text_s a{
+    display: inline-block;
+    border: 1px solid #fdbec0;
+    padding: 24px 84px;
+    color: #fdbec0;
+    text-align: center;
+    margin-left: 12%;
+}
+#k_img{width: 70%;}
+.q_3_l img,.q_4_l img, .q_5_l img,.q_6_l img,.q_7_l img,.q_8_l img,.q_9_l img,.q_10_l img,.q_11_l img{width: 85%;}
+#ani_7{width: 85vw;
+    margin-top: 10vh;
+}
+#ani_8{width: 90vw;}
+#ani_3,#ani_4{    width: 37vw;}
+#ani_6{width: 33vw;}
+#ani_9{width: 37vw;}
+#ani_10{width: 40vw;
+    margin-left: -40px;}
+.q_11_l img{width: 100vw;}
+#ani_5{width: 30vw;
+    margin-left: -20px;}
+.guide{font-size:16px; margin: 20px}
+/* 장면전환 */
+/* #q_1, #q_2, #q_3, #q_4, #q_5, #q_6, #q_7, #q_8, #q_9, #q_10, #q_11, #q_12, #q_13, #q_14, #q_15{
+display:none;
+} */
+
+
+
+/* 삼각형 */
+/* .range-value:after {
+      position: absolute;
+      top: 8px;
+      left: -6px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 7px solid #353535;
+      border-bottom: 7px solid transparent;
+      content: '';
+    } */
+    #confirming #ok a:link, #confirming #ok a:visited, #ok a:hover{color: #555555}
+
+
+/* 모비알 브라우저인 경우 */
+@media screen and (max-width: 480px) {
+     /* iPhone, Android */
+      /* body { background-color: blue; }  */
+    }

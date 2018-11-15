@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/reset.css"/>
+        <link rel="stylesheet" href="./css/introduction.css"/>
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+        <title>Wenddi 소개</title>    
+</head>
+<body>
+    <header>
+        <a href="./index.html">W</a>
+        <span>Wenddi 소개</span>
+        <div id="menu">menu</div>
+    </header>
+    <div id="menu_l">
+        <ul id="top">
+            <a><li><img src="./image/menu_c.png" id="menu_l_c"></li></a>
+            <a href="./login.html"><li>로그인</li></a>
+            <a><li>마이페이지</li></a>
+            <a><li>FAQ</li></a>
+        </ul>
+        <div id="middle">
+            <div id="login">
+                <img src="./image/menu_use.png" alt="">
+                <p>홍길동님 안녕하세요.<br>오늘도 즐거운 하루되세요 :)</p>
+            </div>
+            <ul id="a">
+            <a href="./introduction.html"><li>Wenddi 소개</li></a>
+            <a href="./story.html"><li>스토리 신청하기</li></a>
+            <a><li>BEST</li></a>
+                <ul id="in">
+                    <a href="./review.html"><li>후기 등록하기</li></a>
+                    <a  href="./best.html"><li>후기 구경하기</li></a>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <section id="in1" class="section">
+        <h1>INTRODUCTION</h1>
+        <p>/<br>스토리가 담긴 청첩장 디자인하다.</p>
+        <img src="./image/m2_l.png" alt="">
+        <span class="wenddi">Wenddi</span>
+        <!-- <img src="./image/q_next.PNG" alt="" class="next"> -->
+    </section>
+    <section id="in2" class="section">
+            <span class="wenddi">Wenddi</span>
+            <span>/</span>
+            <img src="./image/i1_6.png" alt="">
+            <p>"현재 한 가정이 되는 두 분의 추억들을 스토리에 담아”<br/>
+                    저희가 청첩장을 디자인 해드립니다.</p>
+    </section>
+    <section id="in3" class="section">
+        <div id="ch1">
+        <div>
+            <button id="ABOUT" class="active">ABOUT</button>
+            <button id="PROCESS">PROCESS</button>
+            <button id="VISION">VISION</button>
+        </div>
+            <div id="ABOUT_a">
+                <span>/</span>
+                <p>“결혼 하기 전 까지의 이 커플들의 로맨스나 에피소드를 담은 청첩장”<br/>
+                그냥 청첩장이 아닌 예비부부들의 스토리를 바탕으로 하나의 청첩장을 선물해주는 웬디.</p>
+                <span class="bot"><span class="wenddi">Wenddi, </span>스토리를 디자인하다.</span>
+            </div>
+        </div>
+        <div id="ch2">
+            <div>
+                <button id="ABOUT">ABOUT</button>
+                <button id="PROCESS" class="active">PROCESS</button>
+                <button id="VISION">VISION</button>
+            </div>
+            <div id="ABOUT_a">
+                <span>/</span>
+                <ul><li>1.스토리 신청하기<br/><span>원하시는 키워드를 선택한다!</span></li>
+                    <li>2.에피소드 입력<br/>                                <span>선택한 키워드에 관련된 에피소드를 들려주세요!</span></li>
+                    <li>3.일러스트 요소 및 컬러 선택<br/><span>청첩장에 넣을 요소를 선택하여 주세요!</span></li></ul>
+            </div>
+        </div>
+        <div id="ch3">
+            <div>
+                <button id="ABOUT">ABOUT</button>
+                <button id="PROCESS">PROCESS</button>
+                <button id="VISION" class="active">VISION</button>
+            </div>
+            <div id="ABOUT_a">
+                <span>/</span>
+                <p>지루하고 서의 없는 기존의 모바일 청첩장과 다른 우리 커플만의 스토리를 담아<br>당신만의 청첩장을 만들어 행복을 선물 하고자 합니다.</p>
+                <span class="bot"><span class="wenddi">Wenddi, </span>모두가 웬디 하는 그날 까지~</span>
+            </div>
+        </div>
+        <div id="but">
+            <img src="./image/in3_but.png" alt="" id="p_but">
+            <img src="./image/in3_butn.png" alt="" id="n_but">
+        </div>
+    </section>
+<script>
+    (function($){
+        var __an = navigator.appName, __av = navigator.appVersion, __ua = navigator.userAgent.toLowerCase(), __acn = navigator.appCodeName, __p = navigator.platform.toLowerCase();
+        var Browser = {
+           window: __p.match(/win32/),
+           mac: __p.match(/macintel/),
+           ie: __ua.match(/msie/),
+           ie8: __ua.match(/msie 8/),
+           ie9: __ua.match(/msie 9/),
+           ie10: __ua.match(/msie 10/),
+           ie11: __ua.match(/msie 11/),
+           chrome: __ua.match(/chrome/),
+           safari: __ua.match(/safari/),
+           firefox: __ua.match(/firefox/),
+           opera: __ua.match(/opera/),
+           mobile: __ua.match(/mobile/),
+           ios: __ua.match(/ipod/) || __ua.match(/iphone/) || __ua.match(/ipad/),
+           android: __ua.match(/android/),
+           ipod: __ua.match(/ipod/),
+           iphone: __ua.match(/iphone/),
+           ipad: __ua.match(/ipad/)
+        };
+
+        var scrollEvent = false;
+        var count = 0;
+        $(window).on('mousewheel DOMMouseScroll',function(c){
+            c.preventDefault();
+            var m = c.originalEvent.wheelDelta;
+            var sb = $('.section').height();
+            if(m > 1 && scrollEvent == false && count >= 1){
+                console.log(count);
+                scrollEvent = true;
+                count--;
+                var $st;
+
+                console.log($.browser);
+
+                if(Browser.chrome){
+                    $st = $('html,body');        
+                }else{
+                    $st = $(window);
+                }
+                $st.stop().animate({scrollTop: sb * count},{duration:800, complete:function(){
+                    scrollEvent = false;}
+                });
+            }else if(m < 1 && scrollEvent == false && count < 5){
+                console.log(count);
+                scrollEvent = true;
+                count++;
+                var $st;
+                if(Browser.chrome){
+                    $st = $('html,body');        
+                }else{
+                    $st = $(window);
+                }
+                $st.stop().animate({scrollTop: sb * count},{duration:800, complete:function(){
+                    scrollEvent = false;}
+                });
+            }
+            });
+
+        $('#menu').on('click',function(){
+            $('#menu_l').css({'right':0})
+        })
+        $('#menu_l_c').on('click',function(){
+            $('#menu_l').css({'right':-9999})
+        })
+
+        $('#ch2,#ch3').hide();
+        
+        var i = 1;
+        if(i == 1){$('#p_but').hide();}
+        $('#n_but').on('click',function(){
+            if(i == 2){
+                i = 2;
+                $('#n_but').hide();
+            }else{$('#n_but').show();$('#p_but').show();}
+            i++;
+            $('#ch1,#ch2,#ch3').hide(); 
+            $('#ch' + i).show()
+            console.log(i)
+        })
+        $('#p_but').on('click',function(){
+            if(i == 2){
+                i = 2;
+                $('#p_but').hide();
+            }else{$('#p_but').show();$('#n_but').show();}
+            i--;
+            $('#ch1,#ch2,#ch3').hide(); 
+            $('#ch' + i).show()
+            console.log(i)
+        })
+       
+    })(jQuery);
+</script>
+</body>
+</html>
