@@ -1,26 +1,48 @@
 hmtl{overflow: hidden}
 section{width: 100%;height: 100vh;}
-.help{height: 10%}
-.article{height: 90%;width: 100%}
+.help{height: 10%; cursor: pointer;}
+.article{height: 90%;width: 100%;position: relative;}
 .none{display: none}
-.helv{display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center;}
+.helv{display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center}
 .act{padding:5%;opacity:0;border-top: 3px solid #fff;border-bottom:3px solid #fff;cursor: pointer;}
+.c1{background-color: #be3349 !important}
+.c2{background-color: #bebc33 !important}
+.c3{background-color: #7970bf !important}
+.c0{background-color: #055b53}
+.c5{background-color: rgb(255, 37, 200)!important}
+button{position:fixed; top: -100px; right: 10px;color:#fff;border: none;border-bottom:2px solid #fff;background: none;outline: none;cursor: pointer;font-size: 20px;}
+
 
 #index{background:linear-gradient(to right, #eb3349, #f45c43);display: flex;align-items: center;justify-content: center}
 #index h1{font-size: 50px;text-align: center;color: #fff;border: 3px solid #fff;padding: 60px;cursor: pointer}
 #index h1:hover{box-shadow: 10px 10px #eb3349}
 #f1{background:linear-gradient(to right,#38ef7d,#11998e);display: flex;flex-direction: column;position: relative}
-#f1 h1{font-size: 2rem;color:#fff;}
+#f1 h1,#f2 h1{font-size: 2rem;color:#fff;}
 .act h1{font-size: 3rem !important}
-#f1 p{color:#fff;padding-top:15px;}
-#f1 span{position: absolute;display:block;width:50px;height:50px;background-color: #1c92d2;}
+#f1 p,#f2 p{color:#fff;padding-top:15px;}
+#f1 .article span,#f2 .article span{position: absolute;display:block;width:70px;height:70px;background-color:#055b53;cursor: pointer}
+#f1 .article span:nth-child(5n),#f2 .article span:nth-child(5n){opacity: 0.3}
+#f1 .article span:nth-child(3n),#f2 .article span:nth-child(3n){opacity: 0.5}
+#f1 .article span:nth-child(4n),#f2 .article span:nth-child(4n){opacity: 0.8}
+#f1 .article span:nth-child(2n){border-radius: 100px}
+#f1 .article span:nth-child(6n),#f2 .article span:nth-child(6n){width: 100px; height: 100px;}
+#f1 .article span:hover{animation: xyv 0.5s infinite linear alternate}
+#mouseover{background-color:#c0be44;color:#fff;position: fixed;left:70vw;top:20px;z-index: 10; padding: 3px 10px 10px 3px;height: 20px;border-radius: 5px}
+.tri{display: inline-block;width:0px; height:0px; border-top:10px solid transparent;border-bottom: 10px solid transparent;border-right: 10px solid #c0be44;position:relative;left: -10px;top:4px}
 #f2{background: linear-gradient(to top, #00d2ff, #3a7bd5)}
-#f3{background: linear-gradient(to left, #a1ffce, #faffd1)}
-
+#f2 .article span{border-radius: 100px}
+#f2 .article .ow{border-radius: 0px}
+#f3{background: linear-gradient(to left, #a1ffce, #faffd1);color: #232325}
+#f3 h1{font-size: 2rem}
+#f3 p{padding-top: 15px;}
+#f3 .act{border-top: 3px solid #232325;border-bottom:3px solid #232325}
 
 /* 애니메이션 */
-@keyframes line{
-    from{
-       
+@keyframes xyv{
+    0%{
+        transform:translateX(0px)
+    }
+    100%{
+        transform:translateX(5px)
     }
 }
