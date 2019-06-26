@@ -45,6 +45,38 @@ table {
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {background-color: #202e45;}
-div {margin: 50px;padding: 50px;border:  2px solid #fff;text-align: center; color: #fff;float: left;}
-button { margin-top: 20px; 	border: 1px solid #fff;	border-radius:300px;	font-size: 10px; }
-h1 {margin: 5px;}
+nav{position: fixed;top:20px;color: #fff;text-align: right;font-size: 20px;}
+nav ul li{margin-top: 10px;padding: 2px 5px 2px 25px;cursor: pointer}
+nav ul .ac{background-color: #fff;color: #202e45;}
+a:link, a:visited, a:hover{color: #fff;text-decoration: none;}
+div {width: 100%;height:calc(100vh - 50px);text-align: center; color: #fff;font-size: 80px;padding-top: 50px}
+button{ margin-top:20px;padding: 5px 10px;border: 2px solid #fff;	border-radius:300px;font-size:12px;color:#202e45;background-color:#fff;outline:0}
+h1 {margin: 15px;font-size: 50px}
+#lap{height: 40vh;overflow:auto;margin-top: 50px;font-size:20px;line-height: 25px}
+#deco{position: fixed;z-index: -1;}
+.deco{top: 0}
+#deco1{position: fixed;display: block;width: 100%;height: 100%;border-top:2px solid #585662;z-index: -3;-ms-transform: rotate(75deg);-webkit-transform: rotate(75deg);transform: rotate(75deg);	transition: all ease .5s;}
+#deco2{position: fixed;display: block;width: 100%;height: 100%;border-top:5px solid #fff;z-index: -1;-ms-transform: rotate(15deg);-webkit-transform: rotate(15deg);transform: rotate(15deg);transition: all ease .5s;}
+#deco3{position: fixed;display: block;width: 100%;height: 100%;border-top:3px solid #44454f;z-index: -3;-ms-transform: rotate(280deg);-webkit-transform: rotate(280deg);transform: rotate(280deg);transition: all ease .5s;}
+#deco4{position: fixed;display: block;width: 100%;height: 100%;border-top:3px solid #a5a5ae;z-index: -2;-ms-transform: rotate(150deg);-webkit-transform: rotate(150deg);transform: rotate(150deg);transition: all ease .5s;}
+#deco5{position: fixed;display: block;width: 100%;height: 100%;border-top:5px solid #b2afbe;z-index: -2;-ms-transform: rotate(-120deg);-webkit-transform: rotate(-120deg);transform: rotate(-120deg);transition: all ease .5s;}
+#deco6{position: fixed;display: block;width: 100%;height: 100%;border-top:7px solid #ffffff;z-index: -1;-ms-transform: rotate(190deg);-webkit-transform: rotate(190deg);transform: rotate(190deg);transition: all ease .5s;}
+.a0{-ms-transform:rotate(80deg)!important;-webkit-transform: rotate(80deg)!important;transform:rotate(80deg)!important;}
+.a2{-ms-transform:rotate(260deg)!important;-webkit-transform: rotate(260deg)!important;transform:rotate(260deg)!important;}
+.a1{-ms-transform:rotate(-15deg)!important;-webkit-transform: rotate(-15deg)!important;transform:rotate(-15deg)!important;}
+.a3{-ms-transform:rotate(175deg)!important;-webkit-transform: rotate(175deg)!important;transform:rotate(175deg)!important;}
+.a4{-ms-transform:rotate(-135deg)!important;-webkit-transform: rotate(-135deg)!important;transform:rotate(-135deg)!important;}
+.a5{-ms-transform:rotate(150deg)!important;-webkit-transform: rotate(150deg)!important;transform:rotate(150deg)!important;}
+.a6{-ms-transform:rotate(145deg)!important;-webkit-transform: rotate(145deg)!important;transform:rotate(145deg)!important;}
+.a7{-ms-transform:rotate(-170deg)!important;-webkit-transform: rotate(-170deg)!important;transform:rotate(-170deg)!important;}
+.a8{-ms-transform:rotate(280deg)!important;-webkit-transform: rotate(280deg)!important;transform:rotate(280deg)!important;}
+.a9{-ms-transform:rotate(20deg)!important;-webkit-transform: rotate(20deg)!important;transform:rotate(20deg)!important;}
+.a10{-ms-transform:rotate(-100deg)!important;-webkit-transform: rotate(-100deg)!important;transform:rotate(-100deg)!important;}
+.a11{-ms-transform:rotate(110deg)!important;-webkit-transform: rotate(110deg)!important;transform:rotate(110deg)!important;}
+
+/* Mobile Device */
+@media screen and (max-width : 767px) {
+	nav{position: fixed;top:70%;color: #fff;text-align: right;font-size: 20px;}
+	nav ul li{margin-top: 15px}
+	div {font-size: 50px}
+}
