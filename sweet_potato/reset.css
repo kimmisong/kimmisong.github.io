@@ -21,7 +21,7 @@ time, mark, audio, video {
 body {
     line-height:1;
     /* font-family: 'Hi Melody', cursive;  */
-    /* font-family:'Jua', sans-serif; */
+    font-family:'Jua', sans-serif;
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
