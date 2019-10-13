@@ -476,6 +476,7 @@ text-align:center;
 #q_7 textarea {
     background-color: #fdc5c6;
 }
+.next7{z-index: 10;}
 /* 질문8페이지(키워드_프로포즈) */
 #q_8{
     background-color: #f56d6f;
