@@ -17,14 +17,20 @@ jQuery(document).ready(function ($) {
  });
  $('.img img').on('mouseenter',function(e){
    $('.go').css({"top":e.pageY+10+"px","left":e.pageX+"px"});
-   $('.go').stop().fadeIn(100);
+   $('.go').stop().fadeIn(50);
  });
  $('.img img').on('mouseleave',function(){
-   $('.go').stop().fadeOut(100);
+   $('.go').stop().fadeOut(50);
  });
-
+ $('.prev').on('click',function(){
+   W_page('l');
+ })
+ $('.next').on('click',function(){
+   W_page('r');
+ })
  var page = function(a){
    if(sech == 1){
+    $('.t, .tr').remove();
       $('section:visible').before('<div class ="t pls"></div>');
       setTimeout(function(){
          $('section:visible').hide();
@@ -32,6 +38,7 @@ jQuery(document).ready(function ($) {
          $('.t').addClass('ple');   
       },1000)  
    }else{
+     $('.tr, .t').remove();
       $('section:visible').before('<div class ="tr prs"></div>');
       setTimeout(function(){
          $('section:visible').hide();
@@ -41,14 +48,27 @@ jQuery(document).ready(function ($) {
    };
  }
 
-
- history.pushState(null, null, location.href);
-
-window.onpopstate = function(event) {
-
-	// history.href = "index.html"
-};
-
+ var wn = 1;
+ $('article:not(#w1)').hide();
+ var W_page = function(rl){
+  if(rl == 'r'){
+    if(wn == 5){
+      wn = 5;
+    }else{
+      wn = wn + 1;
+      $('article').hide();
+      $('#w'+wn).show();
+    }
+  }else{
+    if(wn == 1){
+      wn = 1;
+    }else{
+      wn = wn - 1;
+      $('article').hide();
+      $('#w'+wn).show();
+    }
+  }
+ }
 }) 
 
 // 브라우저 뒤로가기 버튼 해결

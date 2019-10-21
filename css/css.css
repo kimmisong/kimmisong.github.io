@@ -11,14 +11,14 @@ nav{position:fixed;top:10vh;width:calc(100% - 30px)}
 nav ul{display:flex;justify-content:space-between;}
 nav ul li{width:140px;border-bottom:3px solid #231f20}
 nav ul li:nth-child(1){text-align:right}
-#work article{display:flex;padding-top:100px;align-items:center;height:calc(100% - 100px)}
+#work article{display:flex;padding-top:100px;align-items:center;height:calc(100% - 100px);width:100%}
 #work article .img{width:65%;text-align: center}
 #work article .img a img{height:60vh;}
-#work article .text{display:flex;flex-direction: column;width:25%;word-break:keep-all;}
+#work article .text{display:flex;flex-direction: column;width:25%;word-break:keep-all;margin-bottom:50px}
 #work article .text h2{font-size:50px}
 #work article .text h3{font-size:25px;margin:15px 0 20px}
 #work button{border: none;background: none;cursor: pointer}
-#work .button{display:flex;justify-content:space-between;margin-top:50px}
+#work .button{display:flex;justify-content:space-between;position:absolute;bottom:20%;width:25%;}
 #work .button .prev{background-image: url("../image/next.png");width:20px;height:32px;}
 #work .button .next{order:3;background-image: url("../image/next.png");width:20px;height:32px;background-position-x:20px}
 
@@ -49,21 +49,28 @@ body{overflow:hidden}
 .pre{animation:page_RE 0.5s alternate forwards}
 
 @keyframes page_LS{
-    0%{width:10px}
-    100%{width:calc(100vw - 20px)}
+    0%{width:10px;}
+    /* 100%{width:calc(100vw - 20px)} */
+    100%{width: 99%;}
 }
 @keyframes page_LE{
-    0%{width:calc(100vw - 20px)}
+    0%{width: 99%}
     100%{width:10px}
-
 }
 @keyframes page_RS{
     0%{width:10px}
-    100%{width:calc(100vw - 20px)}
+    100%{width: 99%}
 
 }
 @keyframes page_RE{
-    0%{width:calc(100vw - 20px)}
+    0%{width: 99%}
     100%{width:10px}
 
+}
+
+/* work 화면전환 */
+.up{animation: img_up 1s alternate forwards;}
+@keyframes img_up{
+    0%{position: absolute;left:0px}
+    100%{position: absolute;left:-9999px;}
 }
