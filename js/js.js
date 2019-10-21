@@ -52,8 +52,8 @@ jQuery(document).ready(function ($) {
  $('article:not(#w1)').hide();
  var W_page = function(rl){
   if(rl == 'r'){
-    if(wn == 5){
-      wn = 5;
+    if(wn == 4){
+      wn = 4;
     }else{
       wn = wn + 1;
       $('article').hide();
