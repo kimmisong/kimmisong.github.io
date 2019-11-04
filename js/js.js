@@ -56,6 +56,7 @@ jQuery(document).ready(function ($) {
       wn = 4;
     }else{
       wn = wn + 1;
+      // W_img();
       $('article').hide();
       $('#w'+wn).show();
     }
@@ -69,11 +70,31 @@ jQuery(document).ready(function ($) {
     }
   }
  }
+$(window).resize(function() {
+  imgchange()
+});
+var imgchange = function(){
+  var windowWidth = $( window ).width();
+  if(windowWidth < 767) {
+    $('#w2 img').attr('src','./image/m_sp.png');
+    $('#w3 img').attr('src','./image/m_watch.png');
+    $('#w4 img').attr('src','./image/m_sg.png');
+    $('#info img').attr('src','./image/m_my.jpg');
+  } else {
+    $('#w2 img').attr('src','./image/sp.png');
+    $('#w3 img').attr('src','./image/watch.png');
+    $('#w4 img').attr('src','./image/sg.png');
+    $('#info img').attr('src','./image/my.jpg');
+  }
+}
+imgchange()
+ history.pushState(null, null, location.href);
+
+ window.onpopstate = function(event) {
+
+  window.history.go(-2)
+};
+
 }) 
 
-// 브라우저 뒤로가기 버튼 해결
-// work 페이지 버튼
-// _버튼 클릭시 효과는..... 생각해볼것!
-// work 소원 동영상(유투브) 연동
 // 모바일 탭 일때 화면조정
-// 크로스브라우져? 확인 후 보안할것

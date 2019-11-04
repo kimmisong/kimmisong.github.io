@@ -6,10 +6,10 @@ section{width:calc(100% - 30px);height:calc(100vh - 30px);margin: 5px;border:10p
 #main ul li{font-size:30px;font-weight:600;border-bottom:5px solid #231f20;width:200px;}
 #main ul li:nth-child(1){text-align:right}
 
-#work h1, #info h1{position:fixed;top:5vh;width:100%;text-align:center;font-size:30px}
+#work h1, #info h1{position:fixed;top:5vh;width:calc(100% - 30px);text-align:center;font-size:30px}
 nav{position:fixed;top:10vh;width:calc(100% - 30px)}
 nav ul{display:flex;justify-content:space-between;}
-nav ul li{width:140px;border-bottom:3px solid #231f20}
+nav ul li{width:140px;border-bottom:3px solid #231f20;text-align: left}
 nav ul li:nth-child(1){text-align:right}
 #work article{display:flex;padding-top:100px;align-items:center;height:calc(100% - 100px);width:100%}
 #work article .img{width:65%;text-align: center}
@@ -31,9 +31,10 @@ nav ul li:nth-child(1){text-align:right}
 #work #w5{background-color: #ffbc15;}
 #work .go{position: absolute;top:0;left:0;background-repeat: no-repeat;display:none}
 
-#info{background:url("../image/my.jpg") no-repeat;background-position: center}
+#info{text-align: center;}
+#info img{margin-top: 11vh}
 #info h2{font-size: 0;color: transparent;text-indent: -9999px;}
-#info p{position:absolute;bottom:50px;left:50px;line-height: 20px}
+#info p{position:absolute;bottom:50px;left:50px;line-height: 20px;text-align:left;}
 
 body{overflow:hidden}
 #info, #work{display: none}
@@ -60,17 +61,29 @@ body{overflow:hidden}
 @keyframes page_RS{
     0%{width:10px}
     100%{width: 99%}
-
 }
 @keyframes page_RE{
     0%{width: 99%}
     100%{width:10px}
-
 }
 
-/* work 화면전환 */
-.up{animation: img_up 1s alternate forwards;}
-@keyframes img_up{
-    0%{position: absolute;left:0px}
-    100%{position: absolute;left:-9999px;}
+/* Mobile Device */
+@media screen and (max-width : 767px) {
+   #main h1{font-size: 45px}
+   #main h2, #work h1, #info h1 {font-size: 20px}
+   #main ul li{font-size: 20px; width: 30%;}
+   #info img{width:100%;margin-top:20vh}
+   #info p{left:0;margin: 20px 20px 0px 20px;word-break: keep-all}
+   nav ul li{width:25%}
+   #work article{flex-direction: column; padding-top:11vh;height:calc(100% - 11vh);}
+   #work article .img {width:calc(100vw - 30px);height: 45vh}
+   #work article .img a img {width:calc(100% - 20px);height: auto;margin-top:20px}
+   #work article .text{width:calc(100vw - 40px);margin:0 30px 30px}
+   #work article .text h2{font-size:0;color:transparent;text-indent:-9999px}
+   #work .button{width:50%;bottom:25px;left:25%}
+
+}
+/* Tablet Device */
+@media screen and (min-width : 768px) and (max-width : 991px) {
+   
 }
