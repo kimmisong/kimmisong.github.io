@@ -92,14 +92,13 @@ $(window).resize(function() {
   imgchange()
 });
 
+}) 
 history.pushState(null, null, location.href);
 
 window.onpopstate = function(event) {
 
   window.history.go(-2)
 };
-
-}) 
 
 // 모바일 탭 일때 화면조정
 // 뒤로가기문제
