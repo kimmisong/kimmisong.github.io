@@ -12,16 +12,7 @@ jQuery(document).ready(function ($) {
    sech = $(this).data("lr");
    page('main');
  });
- $('.img img').on('mousemove',function(e){
-   $('.go').css({"top":e.pageY+10+"px","left":e.pageX+"px"})
- });
- $('.img img').on('mouseenter',function(e){
-   $('.go').css({"top":e.pageY+10+"px","left":e.pageX+"px"});
-   $('.go').stop().fadeIn(50);
- });
- $('.img img').on('mouseleave',function(){
-   $('.go').stop().fadeOut(50);
- });
+ 
  $('.prev').on('click',function(){
    W_page('l');
  })
@@ -83,6 +74,16 @@ var imgchange = function(){
     $('#w3 img').attr('src','./image/watch.png');
     $('#w4 img').attr('src','./image/sg.png');
     $('#info img').attr('src','./image/my.jpg');
+    $('.img img').on('mousemove',function(e){
+      $('.go').css({"top":e.pageY+10+"px","left":e.pageX+"px"})
+    });
+    $('.img img').on('mouseenter',function(e){
+      $('.go').css({"top":e.pageY+10+"px","left":e.pageX+"px"});
+      $('.go').stop().fadeIn(50);
+    });
+    $('.img img').on('mouseleave',function(){
+      $('.go').stop().fadeOut(50);
+    });
   };
 };
 
@@ -93,11 +94,14 @@ $(window).resize(function() {
 
  history.pushState(null, null, location.href);
 
- window.onpopstate = function(event) {
+ $(window).onpopstate = function(event) {
 
-  window.history.go(-2)
+  $(window).history.go(-2)
 };
 
 }) 
 
 // 모바일 탭 일때 화면조정
+// 뒤로가기문제
+// 모바일 위아래 여백조정
+// 모바일 웬디,고구마 노? 시계,놀이터 모바일조정...?
