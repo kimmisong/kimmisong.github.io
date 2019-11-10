@@ -92,11 +92,11 @@ $(window).resize(function() {
   imgchange()
 });
 
- history.pushState(null, null, location.href);
+history.pushState(null, null, location.href);
 
- $(window).onpopstate = function(event) {
+window.onpopstate = function(event) {
 
-  $(window).history.go(-2)
+  window.history.go(-2)
 };
 
 }) 
