@@ -70,9 +70,7 @@ jQuery(document).ready(function ($) {
     }
   }
  }
-$(window).resize(function() {
-  imgchange()
-});
+
 var imgchange = function(){
   var windowWidth = $( window ).width();
   if(windowWidth < 767) {
@@ -85,9 +83,14 @@ var imgchange = function(){
     $('#w3 img').attr('src','./image/watch.png');
     $('#w4 img').attr('src','./image/sg.png');
     $('#info img').attr('src','./image/my.jpg');
-  }
-}
+  };
+};
+
 imgchange()
+$(window).resize(function() {
+  imgchange()
+});
+
  history.pushState(null, null, location.href);
 
  window.onpopstate = function(event) {
