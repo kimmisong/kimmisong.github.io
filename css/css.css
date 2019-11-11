@@ -84,8 +84,8 @@ body{overflow:hidden}
    nav ul li{width:25%}
    #work article{flex-direction: column; padding-top:11vh;height:calc(100% - 11vh);}
    #work article .img {width:calc(100vw - 30px);height: 45vh}
-   #work article .img a img {width:calc(100% - 20px);height: auto;margin-top:20px}
-   #work article .text{width:calc(100vw - 40px);margin:0 30px 30px;overflow:auto;}
+   #work article .img a img {width:calc(100% - 20px);height: auto;margin-top:2%}
+   #work article .text{width:calc(100vw - 40px);margin:0 30px 30px;}
    #work article .text h2{font-size:0;color:transparent;text-indent:-9999px;}
    #work #w4 .text h3{font-size:25px;margin:15px 0 20px;text-indent:0;color:#231f20}
    #work .button{width:50%;bottom:25px;left:25%}
