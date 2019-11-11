@@ -69,6 +69,9 @@ var imgchange = function(){
     $('#w3 img').attr('src','./image/m_watch.png');
     $('#w4 img').attr('src','./image/m_sg.png');
     $('#info img').attr('src','./image/m_my.jpg');
+    $('#w1 .img a, #w2 .img a').on('click',function(e){
+      e.preventDefault();
+    })
   } else {
     $('#w2 img').attr('src','./image/sp.png');
     $('#w3 img').attr('src','./image/watch.png');
@@ -94,13 +97,7 @@ $(window).resize(function() {
 
 }) 
 
-
-window.onpopstate = function(event) {
-
-  window.history.go(-2)
-};
-
 // 모바일 탭 일때 화면조정
-// 뒤로가기문제
 // 모바일 위아래 여백조정
-// 모바일 웬디,고구마 노? 시계,놀이터 모바일조정...?
+// 모바일 웬디, 고구마 클릭안되게
+// 대표이미지설정
