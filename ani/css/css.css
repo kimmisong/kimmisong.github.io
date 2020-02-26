@@ -36,6 +36,7 @@ button{position:fixed; top: -100px; right: 10px;color:#fff;border: none;border-b
 #f3 h1{font-size: 2rem}
 #f3 p{padding-top: 15px;}
 #f3 .act{border-top: 3px solid #232325;border-bottom:3px solid #232325}
+#f3 #answer{color:#232325;font-size:1rem;border:none;background-color: #fff;}
 
 /* 애니메이션 */
 @keyframes xyv{
@@ -46,3 +47,8 @@ button{position:fixed; top: -100px; right: 10px;color:#fff;border: none;border-b
         transform:translateX(5px)
     }
 }
+/* 모바일 */
+@media screen and (max-width: 767px){
+    #f1 .article span,#f2 .article span{width:50px;height:50px;}
+}
+    
