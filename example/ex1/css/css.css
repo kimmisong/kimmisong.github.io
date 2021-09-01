@@ -1,0 +1,22 @@
+header{padding:20px 22px;}
+header h2{font-size: 18px;float: left;}
+header h2 img{ width: 18px;height: 18px; margin-right:8px}
+header nav ul{float: right}
+header nav ul li{float: left;padding:0 16px}
+header nav ul li a:hover{color:#d89b64}
+section{clear: both;text-align:center;padding:87px 22px;margin-top: 20px;margin-bottom: 121px;border-top:1px solid #e6e6e6;background: url(../image/b_gratia.png) no-repeat;background-size: 299px 90px;background-position-x:center;background-position-y: 61px;}
+section h1{font-size: 24px;}
+section #menu{display:flex;flex-wrap: wrap;justify-content: center;width:1042px;margin: 0 auto;margin-top:86px;}
+section #menu div{width:283px;height:347px;float: left;margin:34px 32px 0 0;background-color: #fff;box-shadow:30px 30px 20px #edeef1}
+section #menu div:nth-child(3n){margin-right:0}
+section #menu div img{width:283px;height:204px;}
+section #menu div h2{font-size:24px;margin:40px 0 33px}
+section p{font-size: 12px}
+section #menu div p{margin: 0 24px}
+footer{clear: both;text-align: center;border-top:1px solid #e6e6e6;font-size:9px;position: relative;padding-bottom:54px;}
+footer #f_logo{width:40px;height:42px;border:1px solid #e6e6e6;border-radius: 40px;padding:15px;margin-top:-35px;background-color:#fff;}
+footer h2{margin:17px}
+footer p{margin-bottom:13px}
+footer ul{margin: 0 auto;position: absolute;left:calc(50% - 31px);}
+footer ul li{float: left;width:13px;;margin:0 4px}
+footer ul li img{width:13px;height:13px;}
