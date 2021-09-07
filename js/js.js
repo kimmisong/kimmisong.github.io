@@ -43,8 +43,8 @@ jQuery(document).ready(function ($) {
  $('article:not(#w1)').hide();
  var W_page = function(rl){
   if(rl == 'r'){
-    if(wn == 10){
-      wn = 10;
+    if(wn == 11){
+      wn = 11;
     }else{
       wn = wn + 1;
       // W_img();
@@ -72,7 +72,7 @@ function showImage(fileCallPath){
     $(".bigPictureWrapper").css({"display":"flex","overflow-y":"scroll"}).show();
     
     $(".bigPicture")
-    .html("<img src='./contents/"+fileCallPath+".jpg' >")
+    .html("<img src='./contents/"+fileCallPath+".jpg'>")
     .fadeIn(100);
     
   }//end fileCallPath
