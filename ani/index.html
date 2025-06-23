@@ -52,7 +52,7 @@
     </section>
 <script>
     (function($){
-        $('#f1,#f2,#f3,#mouseover,button').hide();
+        $('#f1,#f2,#f3,#mouseover,button:not(#answer)').hide();
             $(document).ready(function(){
                 $('#index>h1').on('click',function(){
                     pagenext('#index','#f1');           
