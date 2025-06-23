@@ -37,6 +37,7 @@ button{position:fixed; top: -100px; right: 10px;color:#fff;border: none;border-b
 #f3 p{padding-top: 15px;}
 #f3 .act{border-top: 3px solid #232325;border-bottom:3px solid #232325}
 #f3 #answer{color:#232325;font-size:1rem;border:none;background-color: #fff;}
+#f3 input{background: no-repeat;width: 25vw;height: 3vh;border: 0px;border-bottom: 1px solid;outline: none;font-size: 3rem;padding: 20px 5px;}
 
 /* 애니메이션 */
 @keyframes xyv{
