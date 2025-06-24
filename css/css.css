@@ -12,11 +12,14 @@ section{width:calc(100% - 30px);height:calc(100vh - 30px);margin: 5px;border:10p
 
 #work h1, #info h1{position:fixed;top:5vh;width:calc(100% - 30px);text-align:center;font-size:30px}
 nav{position:fixed;top:10vh;width:calc(100% - 30px)}
-nav ul{display:flex;justify-content:space-between;}
+nav ul:nth-child(1){display:flex;justify-content:space-between;}
 nav ul li{width:140px;border-bottom:3px solid #231f20;text-align: left}
 nav ul li:nth-child(1){text-align:right}
 nav ul li button{font-size: 16px;margin-bottom: -5px;}
-#work article{display:flex;padding-top:100px;align-items:center;height:calc(100% - 100px);width:100%}
+#work nav .sub_nav{text-align:center;}
+#work nav .sub_nav li{display: inline;margin:10px;}
+#work article{display:flex;margin-top:140px;align-items:center;height:calc(100% - 140px);width:100%;overflow:auto;}
+#work #w_i1{align-items:start;}
 #work article .img, .img_x{width:65%;text-align: center}
 #work article .img a img{height:60vh;}
 #work article .text{display:flex;flex-direction: column;width:25%;word-break:keep-all;margin-bottom:50px}
@@ -35,14 +38,8 @@ nav ul li button{font-size: 16px;margin-bottom: -5px;}
 #work #w4{background:linear-gradient(to left, #fd746c, #ff9068);}
 #work #w4 .text h3{font-size:0;color:transparent;text-indent:-9999px}
 #work #w10{background-color: #ffbc15;}
-#work #w5 .c_img .item1, #w6 .c_img .item1{display: inline-block;margin-left: 15px}
-#work #w5 .c_img .item1 img, #w6 .c_img .item1 img{height: 69vh;margin-top: 10px;}
-#work #w7 .c_img .item2{display: inline-block;width: 15%;margin-left:5%;}
-#work #w7 .c_img .item2 img{width: 100%;margin-top: 20px;}
-#work #w8 .c_img .item3{display: inline-block;height: 180px;margin-left:5%;}
-#work #w8 .c_img .item3 img{height: 100%;margin-top: 20px;}
-#work #w9 .c_img_x .item4{display: inline-block;height: 60vh;margin-left:5%;}
-#work #w9 .c_img_x .item4 img{height: 100%;margin-top: 20px;}
+#work #w_i1 figure{display: inline-block;border: 1px solid rgba(0, 0, 0, 0.2);margin: 0;margin-bottom: 15px;padding: 10px;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);width:20%;}
+#work #w_i1 figure img{width: 100%;}
 #work .c_img .bigPictureWrapper {position: absolute;
     display: none;
     justify-content: center;
