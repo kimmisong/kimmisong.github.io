@@ -40,7 +40,7 @@ jQuery(document).ready(function ($) {
  }
 
  var wn = 1;
- $('article:not(#w1)').hide();
+ $('article:not(#w_i1)').hide();
  var W_page = function(rl){
   if(rl == 'r'){
     if(wn == 11){
