@@ -19,7 +19,7 @@ nav ul li button{font-size: 16px;margin-bottom: -5px;}
 #work nav .sub_nav{text-align:center;}
 #work nav .sub_nav li{display: inline;margin:10px;}
 #work article{display:flex;margin-top:140px;align-items:center;height:calc(100% - 140px);width:100%;overflow:auto;}
-#work #w_i1{align-items:start;}
+#work #w_i1{align-items:start;display: block;}
 #work article .img, .img_x{width:65%;text-align: center}
 #work article .img a img{height:60vh;}
 #work article .text{display:flex;flex-direction: column;width:25%;word-break:keep-all;margin-bottom:50px}
