@@ -38,24 +38,23 @@ nav ul li button{font-size: 16px;margin-bottom: -5px;}
 #work #w4{background:linear-gradient(to left, #fd746c, #ff9068);}
 #work #w4 .text h3{font-size:0;color:transparent;text-indent:-9999px}
 #work #w10{background-color: #ffbc15;}
-#work #w_i1 figure{display: inline-block;border: 1px solid rgba(0, 0, 0, 0.2);margin: 0;margin-bottom: 15px;padding: 10px;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);width:20%;}
+#work #w_i1 figure{display: inline-block;margin: 0;margin-bottom: 15px;margin: 10px;vertical-align:top;width:20vw;}
 #work #w_i1 figure img{width: 100%;}
-#work #w_i1 .grid-item { width: 200px; }
-#work .c_img .bigPictureWrapper {position: absolute;
+#work #w_i1 .bigPictureWrapper {position: absolute;
     display: none;
     justify-content: center;
     align-items: baseline;
     top:0%;
     width:100%;
     height:100%;
-    background-color: gray; 
     z-index: 100;
-    background:rgba(255,255,255,0.5);
+    background:rgba(22,22,22,0.81);
 }
-#work .c_img .bigPicture {position: relative;
+#work #w_i1 .bigPicture {position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
+    margin:10px;
 }
 
 #work .c_img .bigPicture img {width:600px;}
