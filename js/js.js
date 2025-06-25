@@ -61,18 +61,19 @@ jQuery(document).ready(function ($) {
     }
   }
  }
-//콘텐츠 이미지 확대
-$('.c_img img').on('click',function(){
-  var path = $(this).attr('id')
+
+ //콘텐츠 이미지 확대
+$('#w_i1 img').on('click',function(){
+  var path = $(this).attr('src');
   showImage(path);
 });//end click event
 
-function showImage(fileCallPath){
+function showImage(path){
     
     $(".bigPictureWrapper").css({"display":"flex","overflow-y":"scroll"}).show();
-    
+    $(".bigPicture").scrollTop(0);
     $(".bigPicture")
-    .html("<img src='./contents/"+fileCallPath+".jpg'>")
+    .html("<img src="+path+">")
     .fadeIn(100);
     
   }//end fileCallPath
@@ -83,6 +84,11 @@ $(".bigPictureWrapper").on("click", function(e){
       $('.bigPictureWrapper').hide();
     }, 100);
   });//end bigWrapperClick event
+
+
+
+
+
 
 
 var imgchange = function(){
@@ -119,11 +125,6 @@ $(window).resize(function() {
 });
 });
 
-$('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: 200
-});
 
 // 모바일 탭 일때 화면조정
 // 모바일 위아래 여백조정
