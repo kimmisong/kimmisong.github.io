@@ -40,6 +40,7 @@ nav ul li button{font-size: 16px;margin-bottom: -5px;}
 #work #w10{background-color: #ffbc15;}
 #work #w_i1 figure{display: inline-block;border: 1px solid rgba(0, 0, 0, 0.2);margin: 0;margin-bottom: 15px;padding: 10px;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);width:20%;}
 #work #w_i1 figure img{width: 100%;}
+#work #w_i1 .grid-item { width: 200px; }
 #work .c_img .bigPictureWrapper {position: absolute;
     display: none;
     justify-content: center;
