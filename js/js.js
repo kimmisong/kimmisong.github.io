@@ -119,6 +119,12 @@ $(window).resize(function() {
 });
 });
 
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+
 // 모바일 탭 일때 화면조정
 // 모바일 위아래 여백조정
 // 대표이미지설정
