@@ -86,6 +86,11 @@ $(".bigPictureWrapper").on("click", function(e){
   });//end bigWrapperClick event
 
 
+  //핀터레스트 구조
+$('.masonry').masonry({
+    itemSelector: 'figure',
+    horizontalOrder: true
+});
 
 
 
