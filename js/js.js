@@ -19,6 +19,14 @@ jQuery(document).ready(function ($) {
  $('.next').on('click',function(){
    W_page('r');
  });
+
+ //핀터레스트 구조
+var masonry = function(){
+    $('.masonry').masonry({
+        itemSelector: 'figure',
+        horizontalOrder: true
+    });
+}
  var page = function(a){
    if(sech == 1){
     $('.t, .tr').remove();
@@ -27,6 +35,7 @@ jQuery(document).ready(function ($) {
          $('section:visible').hide();
          $('section#' + a).show();
          $('.t').addClass('ple');   
+         masonry();
       },1000)  
    }else{
      $('.tr, .t').remove();
@@ -35,9 +44,12 @@ jQuery(document).ready(function ($) {
          $('section:visible').hide();
          $('section#' + a).show();
          $('.tr').addClass('pre');
+         masonry();
       },1000)
    };
  }
+
+
 
  var wn = 1;
  $('article:not(#w_i1)').hide();
@@ -49,7 +61,7 @@ jQuery(document).ready(function ($) {
       wn = wn + 1;
       // W_img();
       $('article').hide();
-      $('#w'+wn).show();
+      $('#w_w'+wn).show();
     }
   }else{
     if(wn == 1){
@@ -57,7 +69,7 @@ jQuery(document).ready(function ($) {
     }else{
       wn = wn - 1;
       $('article').hide();
-      $('#w'+wn).show();
+      $('#w_w'+wn).show();
     }
   }
  }
@@ -84,16 +96,6 @@ $(".bigPictureWrapper").on("click", function(e){
       $('.bigPictureWrapper').hide();
     }, 100);
   });//end bigWrapperClick event
-
-
-  //핀터레스트 구조
-$('.masonry').masonry({
-    itemSelector: 'figure',
-    horizontalOrder: true
-});
-
-
-
 
 
 var imgchange = function(){
