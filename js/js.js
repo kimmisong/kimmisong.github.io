@@ -23,6 +23,7 @@ jQuery(document).ready(function ($) {
  $('#a_wi1').on('click',function(){
       $('article').hide();
       $('#w_i1').show();
+      masonry();
  });
  $('#a_wv1').on('click',function(){
       $('article').hide();
@@ -138,17 +139,17 @@ $(".bigPictureWrapper").on("click", function(e){
 var imgchange = function(){
   var windowWidth = $( window ).width();
   if(windowWidth < 767) {
-    $('#w2 img').attr('src','./image/m_sp.png');
-    $('#w3 img').attr('src','./image/m_watch.png');
-    $('#w4 img').attr('src','./image/m_sg.png');
+    $('#w_w2 img').attr('src','./image/m_sp.png');
+    $('#w_w3 img').attr('src','./image/m_watch.png');
+    $('#w_w4 img').attr('src','./image/m_sg.png');
     $('#info img').attr('src','./image/m_my.jpg');
-    $('#w1 .img a, #w2 .img a').on('click',function(e){
+    $('#w_w1 .img a, #w_w2 .img a').on('click',function(e){
       e.preventDefault();
     })
   } else {
-    $('#w2 img').attr('src','./image/sp.png');
-    $('#w3 img').attr('src','./image/watch.png');
-    $('#w4 img').attr('src','./image/sg.png');
+    $('#w_w2 img').attr('src','./image/sp.png');
+    $('#w_w3 img').attr('src','./image/watch.png');
+    $('#w_w4 img').attr('src','./image/sg.png');
     $('#info img').attr('src','./image/my.jpg');
     $('.img img').on('mousemove',function(e){
       $('.go').css({"top":e.pageY+10+"px","left":e.pageX+"px"});
