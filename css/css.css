@@ -38,14 +38,13 @@ nav ul li button{font-size: 16px;margin-bottom: -5px;}
 #work #w4 .text h3{font-size:0;color:transparent;text-indent:-9999px}
 #work #w10{background-color: #ffbc15;}
 #work #w_i1{align-items:start;display: block;}
-#work #w_i1 .masonry{max-width: 600px;margin: 0 auto; }
+#work #w_i1 .masonry{width: 100%;margin: 0 auto; }
 #work #w_i1 figure{ display: flex; 
     justify-content: center; 
     align-items: center; 
     width: calc(25% - 20px); 
-    margin:10px; 
-    background: #8ab4f8; 
-    font-size: 24px; 
+    margin:10px;
+    font-size: 10px; 
     font-weight: 500; /*display: inline-block;margin: 0;margin-bottom: 15px;margin: 10px;vertical-align:top;width:20vw;*/}
 #work #w_i1 figure img{width: 100%;}
 #work #w_i1 .bigPictureWrapper {position: absolute;
@@ -65,7 +64,7 @@ nav ul li button{font-size: 16px;margin-bottom: -5px;}
     margin:10px;
 }
 
-#work .c_img .bigPicture img {width:600px;}
+#work #w_i1 .bigPicture img {max-width:80vw;}
 
 #work .go{position: absolute;top:0;left:0;background-repeat: no-repeat;display:none}
 
