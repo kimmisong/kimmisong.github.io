@@ -20,11 +20,27 @@ jQuery(document).ready(function ($) {
    W_page('r');
  });
 
+ $('#a_wi1').on('click',function(){
+      $('article').hide();
+      $('#w_i1').show();
+ });
+ $('#a_wv1').on('click',function(){
+      $('article').hide();
+      $('#w_v1').show();
+      wn = 1;
+      w_name = 'w_v1';
+ });
+  $('#a_ww1').on('click',function(){
+      $('article').hide();
+      $('#w_w1').show();
+      wn = 1;
+      w_name = 'w_w1';
+ });
  //핀터레스트 구조
 var masonry = function(){
     $('.masonry').masonry({
         itemSelector: 'figure',
-        horizontalOrder: true
+        horizontalOrder: true,
     });
 }
  var page = function(a){
@@ -49,30 +65,51 @@ var masonry = function(){
    };
  }
 
-
-
  var wn = 1;
  $('article:not(#w_i1)').hide();
  var W_page = function(rl){
-  if(rl == 'r'){
-    if(wn == 11){
-      wn = 11;
+  if(w_name == 'w_w1'){
+    if(rl == 'r'){
+        if(wn == 4){
+          wn = 4;
+        }else{
+          wn = wn + 1;
+          // W_img();
+          $('article').hide();
+          $('#w_w'+wn).show();
+          console.log(w_name);
+        }
+      }else{
+        if(wn == 1){
+          wn = 1;
+        }else{
+          wn = wn - 1;
+          $('article').hide();
+          $('#w_w'+wn).show();
+        }
+      }
     }else{
-      wn = wn + 1;
-      // W_img();
-      $('article').hide();
-      $('#w_w'+wn).show();
-    }
-  }else{
-    if(wn == 1){
-      wn = 1;
-    }else{
-      wn = wn - 1;
-      $('article').hide();
-      $('#w_w'+wn).show();
+    if(rl == 'r'){
+        if(wn == 6){
+          wn = 6;
+        }else{
+          wn = wn + 1;
+          // W_img();
+          $('article').hide();
+          $('#w_v'+wn).show();
+        }
+      }else{
+        if(wn == 1){
+          wn = 1;
+        }else{
+          wn = wn - 1;
+          $('article').hide();
+          $('#w_v'+wn).show();
+        }
+      }
     }
   }
- }
+
 
  //콘텐츠 이미지 확대
 $('#w_i1 img').on('click',function(){
