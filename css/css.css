@@ -31,9 +31,9 @@ nav ul li button{font-size: 16px;margin-bottom: -5px;}
 
 #work #w_w1{background-color: #f8bdbf}
 #work #w_w2{background-color: #f4e398;}
-#work #w_w3, #work #w_v21{background-color: #202e45;color: #d1d1d1;}
-#work #w_w3 .button .prev, #work #w11 .button .prev{background-image: url("../image/next_w.png");width:20px;height:32px;}
-#work #w_w3 .button .next, #work #w11 .button .next{order:3;background-image: url("../image/next_w.png");width:20px;height:32px;background-position-x:20px}
+#work #w_w3, #work #w_v2{background-color: #202e45;color: #d1d1d1;}
+#work #w_w3 .button .prev, #work #w_v2 .button .prev{background-image: url("../image/next_w.png");width:20px;height:32px;}
+#work #w_w3 .button .next, #work #w_v2 .button .next{order:3;background-image: url("../image/next_w.png");width:20px;height:32px;background-position-x:20px}
 #work #w_w4{background:linear-gradient(to left, #fd746c, #ff9068);}
 #work #w_w4 .text h3{font-size:0;color:transparent;text-indent:-9999px}
 #work #w_v1{background-color: #ffbc15;}
@@ -121,6 +121,7 @@ body{overflow:hidden}
    #work article .text h2{font-size:0;color:transparent;text-indent:-9999px;}
    #work #w4 .text h3{font-size:25px;margin:15px 0 20px;text-indent:0;color:#231f20}
    #work .button{width:50%;bottom:25px;left:25%}
+   #work iframe{width: 80%;}
    @keyframes page_LS{
     0%{width:10px;}
     100%{width: 97%;}
