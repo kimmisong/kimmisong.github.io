@@ -124,7 +124,7 @@ body{overflow:hidden}
    #work #w_w4 .text h3{font-size:25px;margin:15px 0 20px;text-indent:0;color:#231f20}
    #work .img_x{width:calc(100% - 40px);margin:5vh 0;}
    #work .img_x iframe{width: 100%;}
-   #work .button{width:50%;bottom:10vh;left:25%}
+   #work .button{width:50%;position:inherit;padding: 20px 25%;}
    @keyframes page_LS{
     0%{width:10px;}
     100%{width: 97%;}
