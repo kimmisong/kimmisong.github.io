@@ -143,6 +143,8 @@ var imgchange = function(){
     $('#w_w3 img').attr('src','./image/m_watch.png');
     $('#w_w4 img').attr('src','./image/m_sg.png');
     $('#info img').attr('src','./image/m_my.jpg');
+    $('.pc').hide();
+    $('.mo').show();
     $('#w_w1 .img a, #w_w2 .img a').on('click',function(e){
       e.preventDefault();
     })
@@ -151,6 +153,8 @@ var imgchange = function(){
     $('#w_w3 img').attr('src','./image/watch.png');
     $('#w_w4 img').attr('src','./image/sg.png');
     $('#info img').attr('src','./image/my.jpg');
+    $('.pc').show();
+    $('.mo').hide();
     $('.img img').on('mousemove',function(e){
       $('.go').css({"top":e.pageY+10+"px","left":e.pageX+"px"});
     });
