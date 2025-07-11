@@ -123,6 +123,7 @@ body{overflow:hidden}
    #work article .text{width:calc(100vw - 60px);}
    #work article .text h2{font-size:0;color:transparent;text-indent:-9999px;}
    #work #w_i1 figure img{max-height:500px;}
+   #work #w_i1 figure figcaption{display: none;}
    #work #w_w4 .text h3{font-size:25px;margin:15px 0 20px;text-indent:0;color:#231f20}
    #work .img_x{width:calc(100% - 40px);margin:5vh 0;}
    #work .img_x iframe{width: 100%;}
